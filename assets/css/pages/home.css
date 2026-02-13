@@ -129,3 +129,34 @@
   color: var(--muted);
   opacity: .9;
 }
+.services {
+  padding: clamp(56px, 8vw, 96px) 0;
+}
+
+.services__head {
+  max-width: 640px;
+  margin-bottom: 36px;
+}
+
+.services__head h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 12px;
+}
+
+.services__head p {
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 820px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+}
