@@ -434,3 +434,60 @@
 @media (max-width: 980px){
   .credentials__grid{ grid-template-columns: 1fr; }
 }
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand__logo{
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 520px){
+  .brand__text{
+    display: none; /* logo-only on mobile */
+  }
+}
+/* ===== Header light theme ===== */
+.header{
+  background: #ffffff;
+  color: #111111;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+/* Brand text */
+.brand__name{
+  color: #111111;
+}
+
+.brand__tag{
+  color: #444444;
+}
+
+/* Desktop nav links */
+.nav a{
+  color: #111111;
+}
+
+.nav a:hover{
+  color: #000000;
+}
+
+/* Header buttons (ghost) */
+.header .btn--ghost{
+  color: #111111;
+  border-color: rgba(0,0,0,.15);
+}
+
+.header .btn--ghost:hover{
+  background: rgba(0,0,0,.04);
+}
+
+/* Hamburger menu */
+.hamburger span{
+  background: #111111;
+}
