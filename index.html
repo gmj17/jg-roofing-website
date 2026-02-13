@@ -134,7 +134,7 @@
       Call Now
     </a>
 
-    <button class="btn btn--dark" data-modal-open="inspection">
+    <button class="btn btn--dark" data-modal-open="schedule">
       Schedule Inspection
     </button>
   </div>
@@ -210,7 +210,7 @@
 
   <div class="cta-row">
     <a class="btn btn--primary" href="tel:1234567890">Call Now</a>
-    <button class="btn btn--dark" data-modal-open="inspection">
+    <button class="btn btn--dark" data-modal-open="schedule">
       Schedule Inspection
     </button>
   </div>
@@ -428,6 +428,89 @@
       </div>
     </section>
 
+    <section class="contact container" id="contact">
+  <header class="contact__head">
+    <h2>Get a Fast Roofing Inspection</h2>
+    <p>
+      Call for urgent leaks. Otherwise send a request and we’ll reach out to schedule.
+      South Florida service.
+    </p>
+  </header>
+
+  <div class="contact__grid">
+    <div class="card contact__info">
+      <h3>Contact</h3>
+
+      <div class="contact__row">
+        <span class="contact__label">Call</span>
+        <a class="contact__value" href="tel:1234567890">(123) 456-7890</a>
+      </div>
+
+      <div class="contact__row">
+        <span class="contact__label">Text</span>
+        <a class="contact__value" href="sms:1234567890">(123) 456-7890</a>
+      </div>
+
+      <div class="contact__row">
+        <span class="contact__label">Service Area</span>
+        <span class="contact__value">South Florida</span>
+      </div>
+
+      <div class="contact__row">
+        <span class="contact__label">License</span>
+        <span class="contact__value"><strong>#CCC1336956</strong></span>
+      </div>
+
+      <div class="contact__cta">
+        <a class="btn btn--primary" href="tel:1234567890">Call Now</a>
+        <button class="btn btn--dark" data-modal-open="schedule">Schedule</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Request Scheduling</h3>
+      <p class="contact__muted">This form sends directly to your inbox.</p>
+
+      <!-- Replace the action URL after Step 3 -->
+<form class="form" action="https://formspree.io/f/mqedpojk" method="POST">
+  <input type="hidden" name="source" value="Schedule Inspection Modal" />
+  <label>
+    Full Name
+    <input name="name" type="text" required />
+  </label>
+
+  <label>
+    Phone
+    <input name="phone" type="tel" required />
+  </label>
+
+  <label>
+    Address (City is fine)
+    <input name="city" type="text" />
+  </label>
+
+  <label>
+    What do you need help with?
+    <select name="service" required>
+      <option value="" disabled selected>Select one</option>
+      <option>Roof Replacement</option>
+      <option>Roof Repair / Leak</option>
+      <option>Storm Damage Inspection</option>
+      <option>Maintenance</option>
+    </select>
+  </label>
+
+  <label>
+    Notes (optional)
+    <textarea name="message" rows="4"></textarea>
+  </label>
+
+  <button class="btn btn--primary" type="submit">Request Scheduling</button>
+</form>
+    </div>
+  </div>
+</section>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer__grid">
@@ -471,7 +554,8 @@
         <button class="iconbtn" data-modal-close aria-label="Close">×</button>
       </div>
 
-      <form class="form" action="#" method="post">
+     <form class="form" action="https://formspree.io/f/mqedpojk" method="POST">
+  <input type="hidden" name="source" value="Schedule Inspection Modal" />
         <div class="form__row">
           <label>
             Full Name
@@ -520,22 +604,5 @@
     <a class="sticky-cta__btn" href="sms:+1XXXXXXXXXX">Text</a>
     <button class="sticky-cta__btn sticky-cta__btn--primary" data-modal-open="schedule">Schedule</button>
   </div>
-  <!-- ================= MOBILE STICKY CTA ================= -->
-<div class="sticky-cta">
-  <a class="sticky-cta__btn" href="tel:1234567890">
-    Call
-  </a>
-
-  <a class="sticky-cta__btn" href="sms:1234567890">
-    Text
-  </a>
-
-  <button
-    class="sticky-cta__btn sticky-cta__btn--primary"
-    data-modal-open="inspection"
-  >
-    Inspect
-  </button>
-</div>
 </body>
 </html>
