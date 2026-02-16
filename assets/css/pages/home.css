@@ -108,6 +108,28 @@
   text-align: left;
 }
 
+/* Hero text card (overrides generic .card styles) */
+.hero__content.card,
+.hero .card{
+  background: rgba(0, 0, 0, 0.50);
+  color: #ffffff;
+  padding: 48px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  max-width: 720px;
+  width: 100%;
+  margin: 0;
+}
+.hero__content.card p,
+.hero__content.card li,
+.hero__content.card span,
+.hero .card p,
+.hero .card li,
+.hero .card span{
+  color: #ffffff;
+}
+
 .hero__eyebrow {
   display: inline-block;
   font-weight: 700;
@@ -142,6 +164,14 @@
   font-size: 13px;
   color: #ffffff;
   opacity: .9;
+}
+
+@media (max-width: 768px){
+  .hero__content.card,
+  .hero .card{
+    padding: 24px;
+    border-radius: 12px;
+  }
 }
 .services {
   padding: clamp(56px, 8vw, 96px) 0;
@@ -532,8 +562,8 @@
 @media (max-width: 520px){
 
   /* make the header less tall */
-  .header{ padding: 8px 0 !important; }
-  .header__inner{ min-height: 56px !important; }
+  .header{ padding: 4px 0 !important; height: 64px !important; }
+  .header__inner{ min-height: 48px !important; }
 
   /* show the brand text again */
   .brand__text{ display: block !important; }
@@ -550,14 +580,14 @@
   .brand__tag{ display: none !important; }
 
   /* make logo bigger */
-  .brand__logo{ height: 64px !important; }
+  .brand__logo{ height: 48px !important; }
 
   /* tighten brand spacing */
   .brand{ gap: 10px !important; }
 
   /* keep hamburger aligned and readable */
   .hamburger{
-    padding: 8px 10px !important;
+    padding: 6px 8px !important;
     border-radius: 12px !important;
   }
   .hamburger span{
