@@ -539,7 +539,7 @@
   .brand__tag{ display: none !important; }
 
   /* make logo bigger */
-  .brand__logo{ height: 44px !important; }
+  .brand__logo{ height: 64px !important; }
 
   /* tighten brand spacing */
   .brand{ gap: 10px !important; }
