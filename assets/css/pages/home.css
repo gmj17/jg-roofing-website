@@ -518,7 +518,7 @@
 }
 /* ===============================
    WHITE THEME PREVIEW (CLIENT)
-   =============================== */
+   =============================== 
 
 :root{
   --bg: #ffffff;
@@ -528,13 +528,13 @@
   --line: rgba(0,0,0,.12);
 }
 
-/* Page background */
+
 body{
   background: #ffffff;
   color: #111111;
 }
 
-/* Sections */
+
 .section,
 .section--alt,
 .hero,
@@ -547,14 +547,13 @@ body{
   background: #ffffff !important;
 }
 
-/* Cards */
 .card{
   background: #ffffff;
   border: 1px solid rgba(0,0,0,.12);
   box-shadow: 0 10px 30px rgba(0,0,0,.06);
 }
 
-/* Headings & text */
+
 h1, h2, h3, h4, h5{
   color: #111111;
 }
@@ -565,12 +564,12 @@ span{
   color: #333333;
 }
 
-/* Hero accent text */
+
 .hero__accent{
-  color: #c1121f; /* keep brand red */
+  color: #c1121f; 
 }
 
-/* Buttons */
+
 .btn--dark{
   background: #f3f3f3;
   color: #111111;
@@ -581,12 +580,11 @@ span{
   background: #eaeaea;
 }
 
-/* Accordion chevron */
+
 .chev{
   border-color: #111111;
 }
 
-/* Footer */
 .footer{
   background: #f7f7f7;
   color: #111111;
@@ -595,3 +593,5 @@ span{
 .footer a{
   color: #111111;
 }
+=============================== */
+
