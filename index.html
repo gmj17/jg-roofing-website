@@ -85,12 +85,12 @@
 </nav>
 
       <div class="header__cta">
-        <a class="btn btn--ghost" href="sms:+1XXXXXXXXXX" aria-label="Text J&G Roofing">
-          Text
-        </a>
-        <a class="btn btn--ghost" href="tel:+1XXXXXXXXXX" aria-label="Call J&G Roofing">
-          Call
-        </a>
+        <!-- <a class="btn btn--ghost" href="sms:+1XXXXXXXXXX" aria-label="Text J&G Roofing"> -->
+          <!-- Text -->
+        <!-- </a> -->
+        <!-- <a class="btn btn--ghost" href="tel:+1XXXXXXXXXX" aria-label="Call J&G Roofing"> -->
+          <!-- Call -->
+        <!-- </a> -->
         <button class="btn btn--primary" data-modal-open="schedule" aria-label="Schedule an inspection">
           Schedule
         </button>
@@ -111,8 +111,8 @@
         <a href="#contact" data-mobile-close>Contact</a>
 
         <div class="mobile__cta">
-          <a class="btn btn--ghost w-full" href="tel:+1XXXXXXXXXX">Call</a>
-          <a class="btn btn--ghost w-full" href="sms:+1XXXXXXXXXX">Text</a>
+          <!-- <a class="btn btn--ghost w-full" href="tel:+1XXXXXXXXXX">Call</a> -->
+          <!-- <a class="btn btn--ghost w-full" href="sms:+1XXXXXXXXXX">Text</a>*/ -->
           <button class="btn btn--primary w-full" data-modal-open="schedule">Schedule Inspection</button>
         </div>
       </div>
@@ -120,33 +120,37 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero container">
-  <span class="hero__eyebrow">Florida Licensed · Hurricane-Ready</span>
+  <section class="hero container hero--static">
+  <div class="hero__content">
+    <span class="hero__eyebrow">Florida Licensed · Hurricane-Ready</span>
 
-  <h1>
-    South Florida Roofing<br />
-    <span class="hero__accent">Built for Storms</span>
-  </h1>
+    <h1>
+      South Florida Roofing<br />
+      <span class="hero__accent">Built for Storms</span>
+    </h1>
 
-  <p class="hero__sub">
-    J&G Roofing LLC is a Florida-licensed roofing contractor delivering
-    inspection-ready, storm-resistant roofing systems across South Florida.
-  </p>
+    <p class="hero__sub">
+      J&G Roofing LLC is a Florida-licensed roofing contractor delivering
+      inspection-ready, storm-resistant roofing systems across South Florida.
+    </p>
 
-  <div class="cta-row">
-    <a class="btn btn--primary" href="tel:1234567890">
-      Call Now
-    </a>
+    <div class="cta-row">
+      <a class="btn btn--primary" href="tel:1234567890">
+        Call Now
+      </a>
 
-    <button class="btn btn--dark" data-modal-open="schedule">
-      Schedule Inspection
-    </button>
+      <button class="btn btn--dark" data-modal-open="schedule">
+        Schedule Inspection
+      </button>
+    </div>
+
+    <div class="hero__trust">
+      <span>License #CCC1336956</span>
+      <span>South Florida Service Area</span>
+    </div>
   </div>
 
-  <div class="hero__trust">
-    <span>License #CCC1336956</span>
-    <span>South Florida Service Area</span>
-  </div>
+ <div class="hero__bg" aria-hidden="true"></div>
 </section>
 
 <section class="values container" id="why-us">
@@ -762,18 +766,18 @@
         <div class="form__row">
           <label>
             Full Name
-            <input type="text" name="name" placeholder="Your name" required />
+            <input type="text" name="name"  required />
           </label>
           <label>
             Phone
-            <input type="tel" name="phone" placeholder="(xxx) xxx-xxxx" required />
+            <input type="tel" name="phone" required />
           </label>
         </div>
 
         <div class="form__row">
           <label>
             Address (City is fine)
-            <input type="text" name="address" placeholder="Miami, Fort Lauderdale, etc." required />
+            <input type="text" name="address"  required />
           </label>
         </div>
 
@@ -785,17 +789,18 @@
             <option>Replacement</option>
             <option>Inspection / Maintenance</option>
             <option>Storm / Insurance</option>
+            <option>Other</option>
           </select>
         </label>
 
         <label>
-          Notes (optional)
-          <textarea name="notes" rows="4" placeholder="What are you noticing? Any active leaks?"></textarea>
+          If you selected Other, please leave a comment on how we can assist.
+          <textarea name="notes" rows="4" ></textarea>
         </label>
 
         <button class="btn btn--primary w-full" type="submit">Request Scheduling</button>
         <p class="fineprint">
-          Prefer immediate help? Use the Call/Text buttons in the header.
+          Prefer immediate help? Contact us by call/text.
         </p>
       </form>
     </div>

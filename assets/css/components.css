@@ -257,6 +257,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
+/* ===== Fix select dropdown options ===== */
+.form select option {
+  color: #111111;
+  background-color: #ffffff;
+}
 
 .sticky-cta{
   position: fixed;

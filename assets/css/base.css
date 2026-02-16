@@ -11,7 +11,7 @@
   --shadow: 0 24px 60px rgba(0,0,0,.45);
   --radius: 20px;
   --radius2: 28px;
-  --container: 1120px;
+  --container: 1400px;
 }
 
 *{ box-sizing: border-box; }
@@ -32,7 +32,7 @@ button, input, select, textarea{ font: inherit; color: inherit; }
 button{ cursor:pointer; }
 
 .container{
-  width: min(var(--container), calc(100% - 40px));
+  width: min(var(--container), calc(100% - 12px));
   margin: 0 auto;
 }
 
