@@ -591,6 +591,13 @@
   margin-top: 0;
 }
 
+@media (max-width: 768px) {
+  .hero--static {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
 /* ===============================
    WHITE THEME PREVIEW (CLIENT)
    =============================== 
