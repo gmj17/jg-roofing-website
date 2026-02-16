@@ -291,3 +291,15 @@
   .form__row{ grid-template-columns: 1fr; }
   .sticky-cta{ display:flex; }
 }
+.brand__logo{
+  height: 56px; /* was 44px */
+  width: auto;
+}
+.brand__name{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.brand__tag{
+  font-size: 14px;
+}

@@ -442,9 +442,18 @@
 }
 
 .brand__logo{
-  height: 44px;
+  height: 150px;
   width: auto;
   display: block;
+}
+@media (max-width: 520px){
+  .brand__logo{
+    height: 54px;
+  }
+
+  .header__inner{
+    min-height: 64px;
+  }
 }
 
 @media (max-width: 520px){
@@ -457,6 +466,14 @@
   background: #ffffff;
   color: #111111;
   border-bottom: 1px solid rgba(0,0,0,.08);
+}
+/* ===== Larger header sizing ===== */
+.header{
+  padding: 14px 0;
+}
+
+.header__inner{
+  min-height: 110px;
 }
 
 /* Brand text */
@@ -490,4 +507,91 @@
 /* Hamburger menu */
 .hamburger span{
   background: #111111;
+}
+.hamburger{
+  width: 48px;
+  height: 40px;
+}
+
+.hamburger span{
+  height: 3px;
+}
+/* ===============================
+   WHITE THEME PREVIEW (CLIENT)
+   =============================== */
+
+:root{
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --line: rgba(0,0,0,.12);
+}
+
+/* Page background */
+body{
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Sections */
+.section,
+.section--alt,
+.hero,
+.values,
+.services,
+.areas,
+.faq,
+.credentials,
+.contact{
+  background: #ffffff !important;
+}
+
+/* Cards */
+.card{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+/* Headings & text */
+h1, h2, h3, h4, h5{
+  color: #111111;
+}
+
+p,
+li,
+span{
+  color: #333333;
+}
+
+/* Hero accent text */
+.hero__accent{
+  color: #c1121f; /* keep brand red */
+}
+
+/* Buttons */
+.btn--dark{
+  background: #f3f3f3;
+  color: #111111;
+  border-color: rgba(0,0,0,.15);
+}
+
+.btn--dark:hover{
+  background: #eaeaea;
+}
+
+/* Accordion chevron */
+.chev{
+  border-color: #111111;
+}
+
+/* Footer */
+.footer{
+  background: #f7f7f7;
+  color: #111111;
+}
+
+.footer a{
+  color: #111111;
 }
