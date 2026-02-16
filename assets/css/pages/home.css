@@ -515,7 +515,48 @@
 
 .hamburger span{
   height: 3px;
+
 }
+/* ===== Mobile header fixes ===== */
+@media (max-width: 520px){
+
+  /* make the header less tall */
+  .header{ padding: 8px 0 !important; }
+  .header__inner{ min-height: 56px !important; }
+
+  /* show the brand text again */
+  .brand__text{ display: block !important; }
+
+  /* keep it one line so it doesn't look crowded */
+  .brand__name{
+    font-size: 15px !important;
+    font-weight: 850 !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+  }
+
+  /* optional: hide tagline on mobile to save space */
+  .brand__tag{ display: none !important; }
+
+  /* make logo bigger */
+  .brand__logo{ height: 44px !important; }
+
+  /* tighten brand spacing */
+  .brand{ gap: 10px !important; }
+
+  /* keep hamburger aligned and readable */
+  .hamburger{
+    padding: 8px 10px !important;
+    border-radius: 12px !important;
+  }
+  .hamburger span{
+    width: 22px !important;
+    height: 3px !important;
+    background: #111 !important;
+  }
+}
+
+
 /* ===============================
    WHITE THEME PREVIEW (CLIENT)
    =============================== 
@@ -594,4 +635,5 @@ span{
   color: #111111;
 }
 =============================== */
+
 
