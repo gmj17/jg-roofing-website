@@ -1,6 +1,3 @@
-// Google Maps API Key
-const API_KEY = 'AIzaSyAwq4aH6fhScMj7xCeaKGyT6xas56Gc3os';
-
 // Service area locations with coordinates
 const locations = [
   { name: 'Fort Myers', lat: 26.6402, lng: -81.8723 },
@@ -38,7 +35,12 @@ function initMap() {
       {
         featureType: 'all',
         elementType: 'labels.text.stroke',
-        stylers: [{ color: '#000000' }, { weight: 2 }]
+        stylers: [{ color: '#000000' }, { weight: 4 }]
+      },
+      {
+        featureType: 'all',
+        elementType: 'geometry',
+        stylers: [{ saturation: -30 }]
       },
       {
         featureType: 'water',
