@@ -1,5 +1,5 @@
 // Google Maps API Key
-const API_KEY = 'AIzaSyDWxJHTi7pSWPM_2XptEtbT5VTnV-cWj7c';
+const API_KEY = 'AIzaSyAwq4aH6fhScMj7xCeaKGyT6xas56Gc3os';
 
 // Service area locations with coordinates
 const locations = [
@@ -79,5 +79,5 @@ function initMap() {
   });
 }
 
-// Initialize map when page loads
-document.addEventListener('DOMContentLoaded', initMap);
+// Initialize map when Google Maps API loads
+window.initMap = initMap;
