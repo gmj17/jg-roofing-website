@@ -1,11 +1,11 @@
 :root{
-  --bg: #0b0c0f;
-  --bg2:#0f1116;
-  --surface:#12141b;
-  --card:#141823;
+  --bg: #10131a;
+  --bg2:#151a24;
+  --surface:#1a2030;
+  --card:#202a3d;
   --text:#f4f6fb;
-  --muted:#b7becb;
-  --line: rgba(255,255,255,.10);
+  --muted:#c8cfdb;
+  --line: rgba(255,255,255,.12);
   --red:#c1121f; /* logo-inspired */
   --red2:#ff3b4a;
   --shadow: 0 24px 60px rgba(0,0,0,.45);
@@ -21,7 +21,7 @@ body{
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: radial-gradient(1200px 500px at 20% 0%, rgba(193,18,31,.18), transparent 60%),
               radial-gradient(900px 600px at 90% 20%, rgba(255,59,74,.10), transparent 55%),
-              linear-gradient(180deg, var(--bg) 0%, #07080a 100%);
+              linear-gradient(180deg, var(--bg) 0%, #0d1118 100%);
   color: var(--text);
   line-height: 1.5;
 }

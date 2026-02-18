@@ -55,7 +55,7 @@
 
 .card{
   border: 1px solid var(--line);
-  background: rgba(20,24,35,.66);
+  background: rgba(30,38,55,.68);
   border-radius: var(--radius);
   padding: 18px;
   box-shadow: var(--shadow);
@@ -99,7 +99,7 @@
   border: 1px solid var(--line);
   border-radius: var(--radius2);
   overflow:hidden;
-  background: rgba(20,24,35,.5);
+  background: rgba(30,38,55,.54);
 }
 .tabs__list{
   display:flex;
@@ -136,7 +136,7 @@
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 16px;
-  background: rgba(20,24,35,.5);
+  background: rgba(30,38,55,.54);
   display:flex;
   gap: 14px;
 }
