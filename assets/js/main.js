@@ -30,11 +30,29 @@ if (toggleBtn && mobileMenu) {
 
 // ================= MODAL (SIMPLE & RELIABLE) =================
 const modals = $$("[data-modal]");
+const firstVisitScheduleKey = "jg_schedule_first_visit_seen";
+
+function shouldAutoOpenScheduleOnFirstVisit() {
+  const scheduleModal = document.querySelector('[data-modal="schedule"]');
+  if (!scheduleModal) return false;
+
+  try {
+    const hasSeen = localStorage.getItem(firstVisitScheduleKey) === "1";
+    if (hasSeen) return false;
+
+    localStorage.setItem(firstVisitScheduleKey, "1");
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function openModal(name) {
   const modal = document.querySelector(`[data-modal="${name}"]`);
   if (!modal) return;
 
+  modal.hidden = false;
+  modal.setAttribute("aria-hidden", "false");
   modal.style.display = "grid";
   document.body.style.overflow = "hidden";
 }
@@ -43,7 +61,13 @@ function closeModal(modal) {
   if (!modal) return;
 
   modal.style.display = "none";
+  modal.hidden = true;
+  modal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "auto";
+}
+
+function resetAllModals() {
+  modals.forEach(closeModal);
 }
 
 // open buttons
@@ -70,6 +94,14 @@ document.addEventListener("keydown", e => {
       closeModal(modal);
     }
   });
+});
+
+window.addEventListener("pageshow", () => {
+  resetAllModals();
+
+  if (shouldAutoOpenScheduleOnFirstVisit()) {
+    openModal("schedule");
+  }
 });
 
 // ================= ACCORDIONS =================
