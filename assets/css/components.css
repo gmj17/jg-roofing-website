@@ -41,6 +41,7 @@
 .btn--primary{
   background: linear-gradient(180deg, var(--red), rgba(193,18,31,.82));
   border-color: rgba(255,255,255,.14);
+  color: #ffffff;
 }
 .btn--primary:hover{ filter: brightness(1.06); }
 .btn--ghost:hover{
@@ -50,6 +51,7 @@
 .btn--dark{
   background: rgba(255,255,255,.08);
   border-color: rgba(255,255,255,.16);
+  color: #ffffff;
 }
 .btn--dark:hover{ background: rgba(255,255,255,.10); }
 

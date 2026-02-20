@@ -1,0 +1,28 @@
+.footer{
+  background: #000000 !important;
+  border-top: 1px solid rgba(255,255,255,.14) !important;
+}
+
+.footer,
+.footer *{
+  color: #ffffff !important;
+}
+
+.footer a{
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  opacity: .9;
+  text-decoration: underline;
+}
+
+.footer__note,
+.footer__small{
+  color: rgba(255,255,255,.82) !important;
+}
+
+.footer__bottom{
+  border-top: 1px solid rgba(255,255,255,.14) !important;
+}

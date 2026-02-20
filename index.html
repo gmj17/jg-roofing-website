@@ -8,7 +8,7 @@
   <title>J&G Roofing LLC | Hurricane-Ready Roofing in South Florida</title>
   <meta
     name="description"
-    content="J&G Roofing LLC is a Florida Certified Roofing Contractor (License #CCC1336956) providing hurricane-ready roof replacement, repairs, and storm damage inspections across South Florida."
+    content="J&G Roofing LLC is a Florida Certified Roofing Contractor (License #CCC1336956) providing hurricane-ready roof replacement, repairs, and inspection & maintenance services across South Florida."
   />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://jg-roofing-website.vercel.app/" />
@@ -42,6 +42,8 @@
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/home.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- JS -->
   <script defer src="assets/js/main.js"></script>
@@ -84,8 +86,7 @@
     <div class="nav__dropdown" aria-label="Service links">
       <a href="services-installation.html">Installation</a>
       <a href="services-repairs.html">Repairs & Replacement</a>
-      <a href="services-inspection.html">Damage Inspection</a>
-      <a href="services-maintenance.html">Maintenance</a>
+      <a href="services-maintenance.html">Inspection & Maintenance</a>
     </div>
   </div>
   <a href="#areas">Service Area</a>
@@ -118,8 +119,7 @@
         <div class="mobile__services">
           <a href="services-installation.html" data-mobile-close>Installation & Replacement</a>
           <a href="services-repairs.html" data-mobile-close>Repairs</a>
-          <a href="services-inspection.html" data-mobile-close>Damage Inspection</a>
-          <a href="services-maintenance.html" data-mobile-close>Maintenance</a>
+          <a href="services-maintenance.html" data-mobile-close>Inspection & Maintenance</a>
         </div>
         <a href="#areas" data-mobile-close>Service Area</a>
         <a href="#projects" data-mobile-close>Projects</a>
@@ -179,16 +179,19 @@
 
   <div class="values__grid">
     <article class="card">
+      <div class="values__icon"><i class="fas fa-clipboard-check"></i></div>
       <h3>Inspection-Ready Work</h3>
       <p>We document conditions, focus on root causes, and build with permitting and inspections in mind.</p>
     </article>
 
     <article class="card">
+      <div class="values__icon"><i class="fas fa-cloud-bolt"></i></div>
       <h3>Storm-Focused Systems</h3>
       <p>Materials and details chosen for heat, uplift, water intrusion, and long-term performance.</p>
     </article>
 
     <article class="card">
+      <div class="values__icon"><i class="fas fa-list-check"></i></div>
       <h3>Clear, Documented Process</h3>
       <p>No pressure sales or fake pricing. You get straight answers and clear next steps.</p>
     </article>
@@ -210,10 +213,11 @@
   </header>
 
   <div class="services__grid">
-    <article class="card">
-      <h3>Roof Replacement</h3>
+    <article class="card services__card">
+      <div class="services__icon"><i class="fas fa-hammer"></i></div>
+      <h3>Roof Installation</h3>
       <p>
-        Full roof replacement using storm-rated materials engineered
+        Professional installation using storm-rated materials engineered
         for high winds, heat, and heavy rain.
       </p>
       <ul class="bullets">
@@ -221,10 +225,12 @@
         <li>Permit & inspection ready</li>
         <li>Residential & light commercial</li>
       </ul>
+      <a class="btn btn--ghost services__link" href="services-installation.html">Learn More</a>
     </article>
 
-    <article class="card">
-      <h3>Roof Repairs</h3>
+    <article class="card services__card">
+      <div class="services__icon"><i class="fas fa-screwdriver-wrench"></i></div>
+      <h3>Roof Repairs & Replacement</h3>
       <p>
         Targeted repairs for leaks, damaged shingles, flashing issues,
         and storm-related wear.
@@ -232,42 +238,25 @@
       <ul class="bullets">
         <li>Leak diagnostics</li>
         <li>Storm damage repair</li>
-        <li>Fast response availability</li>
+        <li>Clear repair vs replacement guidance</li>
       </ul>
+      <a class="btn btn--ghost services__link" href="services-repairs.html">Learn More</a>
     </article>
 
-    <article class="card">
-      <h3>Storm Damage Inspections</h3>
+    <article class="card services__card">
+      <div class="services__icon"><i class="fas fa-clipboard-check"></i></div>
+      <h3>Inspection & Maintenance</h3>
       <p>
-        Professional inspections designed for homeowners, HOAs,
-        and insurance documentation.
+        Inspection identifies issues, maintenance prevents them. Keep your roof
+        performing with proactive care and scheduled checkups.
       </p>
       <ul class="bullets">
         <li>Photo-documented findings</li>
-        <li>Insurance-ready reports</li>
-        <li>No-pressure inspections</li>
+        <li>Maintenance plans for every roof type</li>
+        <li>Seasonal storm-readiness checks</li>
       </ul>
+      <a class="btn btn--ghost services__link" href="services-maintenance.html">Learn More</a>
     </article>
-
-    <article class="card">
-      <h3>Preventative Maintenance</h3>
-      <p>
-        Ongoing maintenance to extend roof life and identify issues
-        before they become costly.
-      </p>
-      <ul class="bullets">
-        <li>Routine condition checks</li>
-        <li>Sealant & flashing review</li>
-        <li>Long-term cost savings</li>
-      </ul>
-    </article>
-  </div>
-
-  <div class="cta-row">
-    <a class="btn btn--primary" href="tel:2395657734">Call Now</a>
-    <button class="btn btn--dark" data-modal-open="schedule">
-      Schedule Inspection
-    </button>
   </div>
 </section>
 
@@ -351,35 +340,52 @@
           <p>Clear steps, no panic. We keep it simple and documented.</p>
         </div>
 
-        <ol class="steps">
-          <li class="steps__item">
-            <span class="steps__n">1</span>
-            <div class="steps__c">
-              <h3>Document the condition</h3>
-              <p>Photos + notes so you have a clear record of what’s going on.</p>
-            </div>
-          </li>
-          <li class="steps__item">
-            <span class="steps__n">2</span>
-            <div class="steps__c">
-              <h3>Avoid common mistakes</h3>
-              <p>We share what typically causes delays or denials (in plain English).</p>
-            </div>
-          </li>
-          <li class="steps__item">
-            <span class="steps__n">3</span>
-            <div class="steps__c">
-              <h3>Choose the right next step</h3>
-              <p>Repair, replace, or monitor — based on what the roof actually needs.</p>
-            </div>
-          </li>
-        </ol>
+        <div class="insurance__layout">
+          <ol class="steps insurance__steps">
+            <li class="steps__item">
+              <span class="steps__n">1</span>
+              <div class="steps__c">
+                <h3><i class="fa-solid fa-camera insurance__step-icon" aria-hidden="true"></i>Document the condition</h3>
+                <p>Photos + notes so you have a clear record of what’s going on.</p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">2</span>
+              <div class="steps__c">
+                <h3><i class="fa-solid fa-triangle-exclamation insurance__step-icon" aria-hidden="true"></i>Avoid common mistakes</h3>
+                <p>We share what typically causes delays or denials.</p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">3</span>
+              <div class="steps__c">
+                <h3><i class="fa-solid fa-clipboard-check insurance__step-icon" aria-hidden="true"></i>Choose the right next step</h3>
+                <p>Repair, replace, or monitor — based on what the roof actually needs.</p>
+              </div>
+            </li>
+          </ol>
 
-        <div class="cta-row">
-          <a class="btn btn--ghost" href="tel:2395657734">Call</a>
-          <a class="btn btn--ghost" href="sms:2395657734">Text</a>
-          <button class="btn btn--primary" data-modal-open="schedule">Schedule</button>
+          <aside class="card insurance__aside">
+            <span class="insurance__eyebrow">Owner Commitment</span>
+            <h3>We Treat Your Roof Like It’s Our Own Home</h3>
+            <p class="insurance__lead">
+              When insurance is involved, most homeowners get overwhelmed by paperwork,
+              timelines, and mixed answers. Our job is to simplify every step and keep your
+              claim moving with clear documentation.
+            </p>
+            <ul class="insurance__points">
+              <li>Photo-by-photo roof evidence organized by problem area</li>
+              <li>Clear scope notes adjusters and homeowners can both understand</li>
+              <li>Straight guidance on repair vs replacement based on actual roof condition</li>
+              <li>Fast communication so you are never left guessing what happens next</li>
+            </ul>
+            <p class="insurance__promise">
+              We stay hands-on from first inspection to final scope so you can protect your home,
+              avoid common claim delays, and make decisions with confidence.
+            </p>
+          </aside>
         </div>
+
       </div>
     </section>
 
@@ -388,54 +394,38 @@
     <section class="projects container" id="projects">
   <header class="projects__head">
     <h2>Recent Work</h2>
-    <p>Real results. Clean installs. Documented process. (We’ll replace placeholders with your photos.)</p>
+    <p>A quick look at completed projects. You can see more photos on each service page.</p>
   </header>
 
   <div class="projects__grid">
     <article class="project card">
       <div class="project__media">
-        <div class="project__ph">Before / After</div>
+        <img class="project__img" src="assets/img/ShingleInstall.jpg" alt="Completed shingle roof installation" />
       </div>
-      <h3>Residential Roof Replacement</h3>
-      <p class="project__meta">South Florida • Inspection-ready finish</p>
-      <ul class="bullets">
-        <li>Storm-rated materials</li>
-        <li>Flashing + edges addressed</li>
-        <li>Clean final walkthrough</li>
-      </ul>
+      <h3>Roof Installation</h3>
+      <p class="project__meta">Storm-rated install • Clean final finish</p>
+      <a class="btn btn--ghost" href="services-installation.html">View Installation Work</a>
     </article>
 
     <article class="project card">
       <div class="project__media">
-        <div class="project__ph">Before / After</div>
+        <img class="project__img" src="assets/img/roof-replacement.jpg" alt="Completed roof replacement project" />
       </div>
-      <h3>Leak Repair & Seal Work</h3>
-      <p class="project__meta">Targeted fix • Source identified</p>
-      <ul class="bullets">
-        <li>Leak source diagnosis</li>
-        <li>Penetrations + flashing</li>
-        <li>Photo documentation</li>
-      </ul>
+      <h3>Repairs & Replacement</h3>
+      <p class="project__meta">Leak-focused repairs • Replacement when needed</p>
+      <a class="btn btn--ghost" href="services-repairs.html">View Repair Work</a>
     </article>
 
     <article class="project card">
       <div class="project__media">
-        <div class="project__ph">Before / After</div>
+        <img class="project__img" src="assets/img/roof-inspection.jpg" alt="Roof inspection and maintenance project" />
       </div>
-      <h3>Storm Damage Inspection</h3>
-      <p class="project__meta">Insurance-ready reporting</p>
-      <ul class="bullets">
-        <li>Clear findings summary</li>
-        <li>Photo-documented areas</li>
-        <li>Next-step options</li>
-      </ul>
+      <h3>Inspection & Maintenance</h3>
+      <p class="project__meta">Photo-documented findings • Proactive care</p>
+      <a class="btn btn--ghost" href="services-maintenance.html">View Maintenance Work</a>
     </article>
   </div>
 
-  <div class="cta-row">
-    <button class="btn btn--primary" data-modal-open="schedule">Schedule an Inspection</button>
-    <a class="btn btn--ghost" href="tel:2395657734">Call</a>
-  </div>
 </section>
 
     <!-- Pricing preview -->
@@ -446,8 +436,9 @@
           <p>No fake “$99 roof repair” gimmicks. Here’s what actually drives cost.</p>
         </div>
 
-        <div class="grid cards-3">
-          <article class="card">
+        <div class="grid cards-3 pricing__grid">
+          <article class="card pricing__card">
+            <div class="pricing__icon" aria-hidden="true"><i class="fa-solid fa-ruler-combined"></i></div>
             <h3>Roof size & pitch</h3>
             <p>More surface area and steeper pitch = more labor and materials.</p>
             <ul class="bullets">
@@ -456,7 +447,8 @@
               <li>Multiple levels or irregular shapes add time</li>
             </ul>
           </article>
-          <article class="card">
+          <article class="card pricing__card">
+            <div class="pricing__icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
             <h3>Roof system choice</h3>
             <p>Underlayment, flashing strategy, and ventilation change the outcome.</p>
             <ul class="bullets">
@@ -465,7 +457,8 @@
               <li>Proper ventilation extends roof life</li>
             </ul>
           </article>
-          <article class="card">
+          <article class="card pricing__card">
+            <div class="pricing__icon" aria-hidden="true"><i class="fa-solid fa-house-crack"></i></div>
             <h3>Existing conditions</h3>
             <p>Decking, moisture, and prior repairs can affect scope and timeline.</p>
             <ul class="bullets">
@@ -522,71 +515,47 @@
   </header>
 
   <div class="grid cards-2">
-    <article class="card card--click">
-      <button class="card__btn" data-accordion="faq1" aria-expanded="false">
-        <h3>How fast can you come out for an inspection?</h3>
-        <p>Typical scheduling depends on demand and weather.</p>
-        <span class="chev" aria-hidden="true"></span>
-      </button>
-      <div class="accordion" data-accordion-panel="faq1" hidden>
-        <ul class="bullets">
-          <li>For active leaks, calling is the fastest way to get help.</li>
-          <li>We’ll confirm a time window and what to expect during the visit.</li>
-          <li>We can also schedule pre-storm readiness checks.</li>
-        </ul>
-      </div>
+    <article class="card faq__card">
+      <h3 class="faq__title"><i class="fa-solid fa-clock faq__qicon" aria-hidden="true"></i>How fast can you come out for an inspection?</h3>
+      <p class="faq__intro">Typical scheduling depends on demand and weather.</p>
+      <ul class="bullets faq__answers">
+        <li>For active leaks, calling is the fastest way to get help.</li>
+        <li>We’ll confirm a time window and what to expect during the visit.</li>
+        <li>We can also schedule pre-storm readiness checks.</li>
+      </ul>
     </article>
 
-    <article class="card card--click">
-      <button class="card__btn" data-accordion="faq2" aria-expanded="false">
-        <h3>Do you help with storm/insurance documentation?</h3>
-        <p>Yes — we focus on clear documentation.</p>
-        <span class="chev" aria-hidden="true"></span>
-      </button>
-      <div class="accordion" data-accordion-panel="faq2" hidden>
-        <ul class="bullets">
-          <li>We can provide photo documentation of roof conditions.</li>
-          <li>We explain findings in plain English.</li>
-          <li>We’ll outline repair vs. replacement options based on the roof’s condition.</li>
-        </ul>
-      </div>
+    <article class="card faq__card">
+      <h3 class="faq__title"><i class="fa-solid fa-file-shield faq__qicon" aria-hidden="true"></i>Do you help with storm/insurance documentation?</h3>
+      <p class="faq__intro">Yes — we focus on clear documentation.</p>
+      <ul class="bullets faq__answers">
+        <li>We can provide photo documentation of roof conditions.</li>
+        <li>We explain findings in plain English.</li>
+        <li>We’ll outline repair vs. replacement options based on the roof’s condition.</li>
+      </ul>
     </article>
 
-    <article class="card card--click">
-      <button class="card__btn" data-accordion="faq3" aria-expanded="false">
-        <h3>How do I know if I need a repair or a full replacement?</h3>
-        <p>It depends on damage type, age, and system condition.</p>
-        <span class="chev" aria-hidden="true"></span>
-      </button>
-      <div class="accordion" data-accordion-panel="faq3" hidden>
-        <ul class="bullets">
-          <li>Repairs make sense for isolated damage and healthy surrounding areas.</li>
-          <li>Replacement is recommended when failures are widespread or the roof system is near end-of-life.</li>
-          <li>We’ll show you the evidence (photos) and the reasoning.</li>
-        </ul>
-      </div>
+    <article class="card faq__card">
+      <h3 class="faq__title"><i class="fa-solid fa-screwdriver-wrench faq__qicon" aria-hidden="true"></i>How do I know if I need a repair or a full replacement?</h3>
+      <p class="faq__intro">It depends on damage type, age, and system condition.</p>
+      <ul class="bullets faq__answers">
+        <li>Repairs make sense for isolated damage and healthy surrounding areas.</li>
+        <li>Replacement is recommended when failures are widespread or the roof system is near end-of-life.</li>
+        <li>We’ll show you the evidence (photos) and the reasoning.</li>
+      </ul>
     </article>
 
-    <article class="card card--click">
-      <button class="card__btn" data-accordion="faq4" aria-expanded="false">
-        <h3>What affects roofing price the most?</h3>
-        <p>Roof size, pitch, materials, and existing conditions.</p>
-        <span class="chev" aria-hidden="true"></span>
-      </button>
-      <div class="accordion" data-accordion-panel="faq4" hidden>
-        <ul class="bullets">
-          <li>Roof size/pitch (labor + safety complexity)</li>
-          <li>Roof system choice (underlayment, flashing, ventilation)</li>
-          <li>Decking/moisture issues (hidden conditions found during teardown)</li>
-        </ul>
-      </div>
+    <article class="card faq__card">
+      <h3 class="faq__title"><i class="fa-solid fa-dollar-sign faq__qicon" aria-hidden="true"></i>What affects roofing price the most?</h3>
+      <p class="faq__intro">Roof size, pitch, materials, and existing conditions.</p>
+      <ul class="bullets faq__answers">
+        <li>Roof size/pitch (labor + safety complexity)</li>
+        <li>Roof system choice (underlayment, flashing, ventilation)</li>
+        <li>Decking/moisture issues (hidden conditions found during teardown)</li>
+      </ul>
     </article>
   </div>
 
-  <div class="cta-row">
-    <button class="btn btn--primary" data-modal-open="schedule">Schedule an Inspection</button>
-    <a class="btn btn--ghost" href="#contact">Contact</a>
-  </div>
 </section>
 
 <section class="credentials container" id="credentials">
@@ -624,10 +593,6 @@
     </article>
   </div>
 
-  <div class="cta-row">
-    <button class="btn btn--primary" data-modal-open="schedule">Schedule an Inspection</button>
-    <a class="btn btn--ghost" href="tel:2395657734">Call</a>
-  </div>
 </section>
     <section class="contact container" id="contact">
   <header class="contact__head">
@@ -695,8 +660,7 @@
       <option value="" disabled selected>Select one</option>
       <option>Roof Replacement</option>
       <option>Roof Repair / Leak</option>
-      <option>Storm Damage Inspection</option>
-      <option>Maintenance</option>
+      <option>Inspection / Maintenance</option>
     </select>
   </label>
 

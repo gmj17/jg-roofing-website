@@ -4,11 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roofing Services | J&G Roofing LLC</title>
-  <meta name="description" content="Explore installation, replacement, repairs, damage inspections, and maintenance services from J&G Roofing LLC." />
+  <meta name="description" content="Explore installation, replacement, repairs, and inspection & maintenance services from J&G Roofing LLC." />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/services-detail.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
@@ -39,8 +41,7 @@
           <div class="nav__dropdown" aria-label="Service links">
             <a href="services-installation.html">Installation</a>
             <a href="services-repairs.html">Repairs & Replacement</a>
-            <a href="services-inspection.html">Damage Inspection</a>
-            <a href="services-maintenance.html">Maintenance</a>
+            <a href="services-maintenance.html">Inspection & Maintenance</a>
           </div>
         </div>
         <a href="index.html#projects">Projects</a>
@@ -57,10 +58,9 @@
       <div class="container mobile__inner">
         <a href="services.html" data-mobile-close>Services</a>
         <div class="mobile__services">
-          <a href="services-installation.html" data-mobile-close>Installation & Replacement</a>
-          <a href="services-repairs.html" data-mobile-close>Repairs</a>
-          <a href="services-inspection.html" data-mobile-close>Damage Inspection</a>
-          <a href="services-maintenance.html" data-mobile-close>Maintenance</a>
+          <a href="services-installation.html" data-mobile-close>Installation</a>
+          <a href="services-repairs.html" data-mobile-close>Repairs & Replacement</a>
+          <a href="services-maintenance.html" data-mobile-close>Inspection & Maintenance</a>
         </div>
         <a href="index.html#projects" data-mobile-close>Projects</a>
         <a href="index.html#faq" data-mobile-close>FAQ</a>
@@ -73,60 +73,97 @@
     <section class="service-hero">
       <div class="container">
         <span class="service-chip">Core Roofing Services</span>
-        <h1 class="service-hero__title">Choose the Service You Need</h1>
-        <p class="service-hero__sub">Each service page breaks down scope, material options (shingle, tile, metal), and the step-by-step process so homeowners can make confident decisions.</p>
+        <h1 class="service-hero__title">Licensed Roofing Services You Can Trust</h1>
+        <p class="service-hero__sub">Clear recommendations, quality materials, and workmanship backed by warranty.</p>
+        <div class="service-hero__actions">
+          <a class="btn btn--primary" href="tel:2395657734">Call</a>
+          <button class="btn btn--dark" data-modal-open="schedule">Get Free Estimate</button>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container service-grid">
-        <article class="card service-card">
-          <h3>Roof Installation & Replacement</h3>
-          <p>Professional installation for new construction and complete replacement for aging roofs. We work with shingle, tile, and metal systems designed to withstand Florida's intense weather conditions.</p>
-          <ul class="bullets">
-            <li>New roof installation with hurricane-rated materials</li>
-            <li>Full tear-off and replacement services</li>
-            <li>Material options: Shingle, Tile, Metal</li>
-            <li>Permit-ready, inspection-focused work</li>
-          </ul>
-          <div class="service-cta"><a class="btn btn--primary" href="services-installation.html">Learn More</a></div>
-        </article>
-        
-        <article class="card service-card">
-          <h3>Roof Repairs & Leak Work</h3>
-          <p>Targeted repair services that focus on identifying and fixing the root cause of leaks. We handle everything from minor shingle damage to complex flashing failures.</p>
-          <ul class="bullets">
-            <li>Leak diagnostics and tracing</li>
-            <li>Flashing and penetration repairs</li>
-            <li>Storm damage restoration</li>
-            <li>Material-specific repair methods</li>
-          </ul>
-          <div class="service-cta"><a class="btn btn--primary" href="services-repairs.html">Learn More</a></div>
-        </article>
-        
-        <article class="card service-card">
-          <h3>Storm Damage Inspection</h3>
-          <p>Comprehensive roof inspections with photo documentation designed for homeowners, property managers, and insurance claims. Get a clear picture of your roof's condition after severe weather.</p>
-          <ul class="bullets">
-            <li>Photo-documented condition reports</li>
-            <li>Insurance-ready findings</li>
-            <li>Wind and hail damage assessment</li>
-            <li>No-pressure recommendations</li>
-          </ul>
-          <div class="service-cta"><a class="btn btn--primary" href="services-inspection.html">Learn More</a></div>
-        </article>
-        
-        <article class="card service-card">
-          <h3>Preventative Maintenance</h3>
-          <p>Regular maintenance programs to extend your roof's lifespan and catch small issues before they become expensive repairs. Tailored service plans for shingle, tile, and metal roofs.</p>
-          <ul class="bullets">
-            <li>Scheduled condition reviews</li>
-            <li>Minor corrective adjustments</li>
-            <li>Photo logs for trend tracking</li>
-            <li>Seasonal storm-readiness checks</li>
-          </ul>
-          <div class="service-cta"><a class="btn btn--primary" href="services-maintenance.html">Learn More</a></div>
-        </article>
+      <div class="container">
+        <div class="section__head">
+          <h2>Why Choose Professional Roofing</h2>
+          <p>Your roofing system is only as good as its installation. We focus on long-term performance and durability from day one.</p>
+        </div>
+        <div class="service-grid service-grid--3">
+          <article class="card">
+            <div class="card__icon"><i class="fas fa-users"></i></div>
+            <h3>Expert Crew</h3>
+            <ul class="bullets">
+              <li>Licensed and insured professional team</li>
+              <li>15+ years combined roofing experience</li>
+              <li>Proper techniques for South Florida weather</li>
+              <li>Clean, respectful on-site practices</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Quality & Warranty</h3>
+            <ul class="bullets">
+              <li>Full workmanship warranty (5-10 years)</li>
+              <li>Material warranties honored and registered</li>
+              <li>Final inspection by owner before handoff</li>
+              <li>Warranty documentation included</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card__icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>Timeline</h3>
+            <ul class="bullets">
+              <li>Most residential roofs: 3-5 business days</li>
+              <li>Permitting handled by us with city</li>
+              <li>Pre-install and post-install walkthroughs</li>
+              <li>Project coordination from start to finish</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container services-row">
+        <aside class="services-row__lead" aria-hidden="true">
+          <h2>Our Services</h2>
+          <span class="services-row__arrow"><i class="fas fa-arrow-right"></i></span>
+        </aside>
+
+        <div class="service-grid service-grid--3 services-row__cards">
+          <article class="card service-card">
+            <div class="service-card__media">
+              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-hammer"></i></span>
+              <img src="assets/img/ShingleInstall.jpg" alt="Roofing installation project" />
+            </div>
+            <div class="service-card__content">
+              <h3>Roofing Installation</h3>
+              <a class="service-card__link" href="services-installation.html">Learn More</a>
+            </div>
+          </article>
+          
+          <article class="card service-card">
+            <div class="service-card__media">
+              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-screwdriver-wrench"></i></span>
+              <img src="assets/img/roof-replacement.jpg" alt="Roof repair project" />
+            </div>
+            <div class="service-card__content">
+              <h3>Roof Repair</h3>
+              <a class="service-card__link" href="services-repairs.html">Learn More</a>
+            </div>
+          </article>
+          
+          <article class="card service-card">
+            <div class="service-card__media">
+              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-clipboard-check"></i></span>
+              <img src="assets/img/roof-inspection.jpg" alt="Roof maintenance project" />
+            </div>
+            <div class="service-card__content">
+              <h3>Roof Maintenance</h3>
+              <a class="service-card__link" href="services-maintenance.html">Learn More</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
