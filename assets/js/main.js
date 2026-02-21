@@ -117,6 +117,28 @@ $$("[data-accordion]").forEach(btn => {
   });
 });
 
+// ================= FAQ TOGGLE =================
+$$("[data-faq-toggle]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const faqItem = btn.closest(".faq-item");
+    if (!faqItem) return;
+
+    // Find the parent grid/section to scope the toggle
+    const faqGrid = faqItem.closest(".faq-grid");
+    if (!faqGrid) return;
+
+    // Close all other FAQ items in the same grid
+    $$(".faq-item", faqGrid).forEach(item => {
+      if (item !== faqItem && item.classList.contains("active")) {
+        item.classList.remove("active");
+      }
+    });
+
+    // Toggle current item
+    faqItem.classList.toggle("active");
+  });
+});
+
 // ================= TABS =================
 $$("[data-tabs]").forEach(tabs => {
   const buttons = $$("[data-tab]", tabs);
