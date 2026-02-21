@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="assets/css/footer.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/service-map.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwq4aH6fhScMj7xCeaKGyT6xas56Gc3os&callback=initMap&loading=async"></script>
 </head>
 <body>
   <div class="topbar">
@@ -76,8 +78,52 @@
         <h1 class="service-hero__title">Licensed Roofing Services You Can Trust</h1>
         <p class="service-hero__sub">Clear recommendations, quality materials, and workmanship backed by warranty.</p>
         <div class="service-hero__actions">
-          <a class="btn btn--primary" href="tel:2395657734">Call</a>
-          <button class="btn btn--dark" data-modal-open="schedule">Get Free Estimate</button>
+          <a class="btn btn--primary" href="tel:2395657734"><i class="fas fa-phone"></i> Call</a>
+          <button class="btn btn--dark" data-modal-open="schedule"><i class="fas fa-calendar-check"></i> Schedule</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container services-row">
+        <aside class="services-row__lead" aria-hidden="true">
+          <h2>Our Services</h2>
+          <span class="services-row__arrow"><i class="fas fa-arrow-right"></i></span>
+        </aside>
+
+        <div class="service-grid service-grid--3 services-row__cards">
+          <article class="card service-card">
+            <div class="service-card__media">
+              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-hammer"></i></span>
+              <img src="assets/img/ShingleInstall.jpg" alt="Roofing installation project" />
+            </div>
+            <div class="service-card__content">
+              <h3>Roofing Installation</h3>
+              <a class="service-card__link" href="services-installation.html">Learn More</a>
+            </div>
+          </article>
+          
+          <article class="card service-card">
+            <div class="service-card__media">
+              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-screwdriver-wrench"></i></span>
+              <img src="assets/img/roof-replacement.jpg" alt="Roof repair project" />
+            </div>
+            <div class="service-card__content">
+              <h3>Roof<br>Repair</h3>
+              <a class="service-card__link" href="services-repairs.html">Learn More</a>
+            </div>
+          </article>
+          
+          <article class="card service-card">
+            <div class="service-card__media">
+              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-clipboard-check"></i></span>
+              <img src="assets/img/roof-inspection.jpg" alt="Roof maintenance project" />
+            </div>
+            <div class="service-card__content">
+              <h3>Roof Maintenance</h3>
+              <a class="service-card__link" href="services-maintenance.html">Learn More</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -120,50 +166,130 @@
             </ul>
           </article>
         </div>
+
+        <div class="service-about">
+          <div class="service-about__badge" aria-hidden="true">
+            <img src="assets/img/tLogo.png" alt="J&G Roofing Logo" />
+          </div>
+          <h3 class="service-about__title">Experience You Can Trust</h3>
+          <div class="service-about__divider"></div>
+          <p class="service-about__lead">As your neighbors here in South Florida, we've seen what our weather can do to a roof. That's why we treat every home like it's our own—because we understand what it means to protect the place where your family gathers, where memories are made, and where you feel safe.</p>
+          
+          <div class="service-about__highlights">
+            <div class="service-about__point">
+              <i class="fas fa-check-circle"></i>
+              <span>Licensed and insured Florida roofing contractor (#CCC1336956)</span>
+            </div>
+            <div class="service-about__point">
+              <i class="fas fa-check-circle"></i>
+              <span>Comprehensive warranties on materials and workmanship</span>
+            </div>
+            <div class="service-about__point">
+              <i class="fas fa-check-circle"></i>
+              <span>Storm-ready systems built for our hurricane seasons</span>
+            </div>
+          </div>
+
+          <p>We're not just contractors—we're part of this community. When you call us, you're working with people who care about doing the job right and making sure you feel confident in your home. From honest inspections to quality work you can count on, we're here to help protect what matters most to you.</p>
+          
+          <p class="service-about__closing">Ready to schedule your roofing service? Contact J&G Roofing LLC for a free estimate and consultation.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container services-row">
-        <aside class="services-row__lead" aria-hidden="true">
-          <h2>Our Services</h2>
-          <span class="services-row__arrow"><i class="fas fa-arrow-right"></i></span>
-        </aside>
-
-        <div class="service-grid service-grid--3 services-row__cards">
-          <article class="card service-card">
-            <div class="service-card__media">
-              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-hammer"></i></span>
-              <img src="assets/img/ShingleInstall.jpg" alt="Roofing installation project" />
-            </div>
-            <div class="service-card__content">
-              <h3>Roofing Installation</h3>
-              <a class="service-card__link" href="services-installation.html">Learn More</a>
-            </div>
-          </article>
-          
-          <article class="card service-card">
-            <div class="service-card__media">
-              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-screwdriver-wrench"></i></span>
-              <img src="assets/img/roof-replacement.jpg" alt="Roof repair project" />
-            </div>
-            <div class="service-card__content">
-              <h3>Roof Repair</h3>
-              <a class="service-card__link" href="services-repairs.html">Learn More</a>
-            </div>
-          </article>
-          
-          <article class="card service-card">
-            <div class="service-card__media">
-              <span class="service-card__badge" aria-hidden="true"><i class="fas fa-clipboard-check"></i></span>
-              <img src="assets/img/roof-inspection.jpg" alt="Roof maintenance project" />
-            </div>
-            <div class="service-card__content">
-              <h3>Roof Maintenance</h3>
-              <a class="service-card__link" href="services-maintenance.html">Learn More</a>
-            </div>
-          </article>
+    <section class="service-showcase">
+      <div class="service-showcase__image">
+        <img src="assets/img/ShingleInstall.jpg" alt="Professional roof installation by J&G Roofing" />
+      </div>
+      <div class="service-showcase__content">
+        <h2 class="service-showcase__title">Protecting What You've Built</h2>
+        <p>Your home is a significant investment and an emotional anchor—a place where memories are made and loved ones are safe. South Florida's intense weather puts constant pressure on that investment, which is why choosing the right contractor makes all the difference.</p>
+        <p>At J&G Roofing, we approach every project with the understanding that we're protecting more than just a structure. We take pride in quality workmanship, honest communication, and standing behind our work with comprehensive warranties that give you real assurance.</p>
+        <p>Whether you need routine maintenance or emergency repairs, we're ready to help you maintain the integrity and value of your home for years to come.</p>
+        <div class="service-showcase__actions">
+          <a class="btn btn--cta-dark" href="tel:2395657734"><i class="fas fa-phone"></i> Call</a>
+          <button class="btn btn--cta-primary" data-modal-open="schedule"><i class="fas fa-calendar-check"></i> Schedule</button>
         </div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <div class="process-header">
+          <h2>We Keep It Simple</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-step__icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Call & Consult</h3>
+            <p>Reach out to discuss your roofing needs. We'll answer your questions and schedule a time that works for you.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__icon">
+              <i class="fas fa-magnifying-glass"></i>
+            </div>
+            <h3>Inspection & Estimate</h3>
+            <p>We thoroughly inspect your roof and provide a clear, detailed estimate with no hidden costs.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3>Expert Work</h3>
+            <p>Our licensed team handles permits, scheduling, and quality installation from start to finish.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <h3>Final Walkthrough</h3>
+            <p>We inspect the work together and provide warranty documentation for your peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas container" id="areas">
+      <header class="areas__head">
+        <h2>Service Area</h2>
+        <p>
+          We serve these regions and the surrounding areas. Can't find your location? Give us a call—chances are we cover it.
+        </p>
+      </header>
+
+      <div class="areas__grid">
+        <div class="areas__map card" aria-label="Service area map">
+          <div id="service-map"></div>
+        </div>
+
+        <article class="card areas__single">
+          <h3>Florida Service Locations</h3>
+
+          <ul class="areas__list">
+            <li>Fort Myers</li>
+            <li>Cape Coral</li>
+            <li>Port Charlotte</li>
+            <li>Naples</li>
+            <li>Tampa</li>
+            <li>St. Petersburg</li>
+            <li>Pinellas County</li>
+            <li>Sarasota</li>
+            <li>Bradenton</li>
+            <li>Orlando Area</li>
+            <li>West Palm Beach</li>
+            <li>Fort Lauderdale</li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn btn--primary" href="#contact">Contact</a>
+          </div>
+        </article>
       </div>
     </section>
 
