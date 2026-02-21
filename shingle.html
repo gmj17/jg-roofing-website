@@ -93,37 +93,109 @@
         <div class="section__head">
           <h2>Shingle Types & Options</h2>
         </div>
-        <div class="service-grid">
-          <article class="card">
-            <h3>Architectural (Laminated) Shingles</h3>
-            <p>Multi-layer design creates dimensional appearance and enhanced durability. Most popular choice for residential roofing.</p>
-            <ul class="bullets">
-              <li>25-30 year typical lifespan</li>
-              <li>High wind rating options (110-130 mph)</li>
-              <li>Enhanced curb appeal</li>
-              <li>Wide color selection</li>
-            </ul>
+        <div class="shingle-types-grid">
+          <article class="card shingle-type-card">
+            <div class="shingle-type-card__media">
+              <img src="assets/img/laminatedshingles.jpg" alt="Architectural laminated shingle roof" />
+            </div>
+            <div class="shingle-type-card__body">
+              <h3>Architectural (Laminated) Shingles</h3>
+              <p>Multi-layer design creates dimensional appearance and enhanced durability. Most popular choice for residential roofing.</p>
+              <ul class="bullets">
+                <li>25-30 year typical lifespan</li>
+                <li>High wind rating options (110-130 mph)</li>
+                <li>Enhanced curb appeal</li>
+                <li>Wide color selection</li>
+              </ul>
+            </div>
           </article>
-          <article class="card">
-            <h3>3-Tab Shingles</h3>
-            <p>Traditional flat design, lower cost option with proven track record. Lighter weight and simpler installation.</p>
-            <ul class="bullets">
-              <li>20-25 year typical lifespan</li>
-              <li>Standard wind ratings (60-90 mph)</li>
-              <li>Budget-friendly option</li>
-              <li>Clean, uniform look</li>
-            </ul>
+          <article class="card shingle-type-card">
+            <div class="shingle-type-card__media">
+              <img src="assets/img/3TabShingles.jpg" alt="3-tab shingle roof installation" />
+            </div>
+            <div class="shingle-type-card__body">
+              <h3>3-Tab Shingles</h3>
+              <p>Traditional flat design, lower cost option with proven track record. Lighter weight and simpler installation.</p>
+              <ul class="bullets">
+                <li>20-25 year typical lifespan</li>
+                <li>Standard wind ratings (60-90 mph)</li>
+                <li>Budget-friendly option</li>
+                <li>Clean, uniform look</li>
+              </ul>
+            </div>
           </article>
-          <article class="card">
-            <h3>Impact-Resistant Shingles</h3>
-            <p>Class 4 impact-rated shingles designed for hail and debris. May qualify for insurance discounts.</p>
-            <ul class="bullets">
-              <li>Enhanced hail protection</li>
-              <li>Reinforced construction</li>
-              <li>Potential insurance savings</li>
-              <li>Similar lifespan to architectural</li>
-            </ul>
+          <article class="card shingle-type-card">
+            <div class="shingle-type-card__media">
+              <img src="assets/img/impactshingles.jpg" alt="Impact-resistant shingle roof" />
+            </div>
+            <div class="shingle-type-card__body">
+              <h3>Impact-Resistant Shingles</h3>
+              <p>Class 4 impact-rated shingles designed for hail and debris. May qualify for insurance discounts.</p>
+              <ul class="bullets">
+                <li>Enhanced hail protection</li>
+                <li>Reinforced construction</li>
+                <li>Potential insurance savings</li>
+                <li>Similar lifespan to architectural</li>
+              </ul>
+            </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shingle-choice">
+      <div class="container">
+        <div class="section__head">
+          <h2>How Do You Know Which Shingle Is Right for You?</h2>
+          <p>Choosing the right system comes down to your budget, wind exposure, and how long you plan to stay in the home.</p>
+        </div>
+        <div class="shingle-choice__layout">
+          <div class="shingle-choice__grid">
+            <article class="choice-card choice-card--budget">
+              <div class="choice-card__icon"><i class="fas fa-dollar-sign"></i></div>
+              <h3>Budget & Value</h3>
+              <p>If you want the most affordable install with solid performance, 3-tab is typically the entry option.</p>
+              <ul class="choice-list">
+                <li>Lowest upfront cost</li>
+                <li>Simple replacement planning</li>
+                <li>Good for short-to-mid ownership timelines</li>
+              </ul>
+            </article>
+
+            <article class="choice-card choice-card--durability">
+              <div class="choice-card__icon"><i class="fas fa-wind"></i></div>
+              <h3>Durability & Weather</h3>
+              <p>For stronger wind performance and longer service life, architectural or impact-resistant shingles are better choices.</p>
+              <ul class="choice-list">
+                <li>Higher wind-rated options</li>
+                <li>Better long-term performance</li>
+                <li>Added storm confidence in Florida weather</li>
+              </ul>
+            </article>
+
+            <article class="choice-card choice-card--style">
+              <div class="choice-card__icon"><i class="fas fa-home"></i></div>
+              <h3>Style & Curb Appeal</h3>
+              <p>If appearance matters most, architectural shingles give a dimensional look with wider color and profile options.</p>
+              <ul class="choice-list">
+                <li>More premium visual depth</li>
+                <li>Greater color flexibility</li>
+                <li>Boosted resale presentation</li>
+              </ul>
+            </article>
+          </div>
+
+          <aside class="choice-summary">
+            <div class="choice-summary__badge">Quick Recommendation</div>
+            <h3>Most Homeowners Choose Architectural Shingles</h3>
+            <p>They offer the strongest balance of price, durability, and visual appeal for South Florida homes.</p>
+            <div class="choice-summary__points">
+              <div><strong>Best all-around:</strong> Architectural</div>
+              <div><strong>Best budget:</strong> 3-Tab</div>
+              <div><strong>Best storm upgrade:</strong> Impact-Resistant</div>
+            </div>
+            <button class="btn btn--primary w-full" data-modal-open="schedule">Get a Personalized Recommendation</button>
+          </aside>
         </div>
       </div>
     </section>
@@ -309,5 +381,56 @@
       </div>
     </footer>
   </main>
+
+  <div class="modal" data-modal="schedule" aria-hidden="true" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-label="Schedule inspection">
+      <div class="modal__head">
+        <h2>Schedule an Inspection</h2>
+        <button class="iconbtn" data-modal-close aria-label="Close">×</button>
+      </div>
+
+      <form class="form" action="https://formspree.io/f/mqedpojk" method="POST">
+        <input type="hidden" name="source" value="Schedule Inspection Modal" />
+        <div class="form__row">
+          <label>
+            Full Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required />
+          </label>
+        </div>
+
+        <div class="form__row">
+          <label>
+            Address (City is fine)
+            <input type="text" name="address" required />
+          </label>
+        </div>
+
+        <label>
+          What do you need help with?
+          <select name="need" required>
+            <option value="" selected disabled>Select one</option>
+            <option>Leak / Repair</option>
+            <option>Replacement</option>
+            <option>Inspection / Maintenance</option>
+            <option>Storm / Insurance</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>
+          If you selected Other, please leave a comment on how we can assist.
+          <textarea name="notes" rows="4"></textarea>
+        </label>
+
+        <button class="btn btn--primary w-full" type="submit">Request Scheduling</button>
+        <p class="fineprint">Prefer immediate help? Contact us by call/text.</p>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

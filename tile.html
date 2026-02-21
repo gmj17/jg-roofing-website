@@ -96,6 +96,63 @@
       </div>
     </section>
 
+    <section class="section shingle-choice">
+      <div class="container">
+        <div class="section__head">
+          <h2>How Do You Know Which Tile Option Is Right for You?</h2>
+          <p>Your best fit depends on structural capacity, long-term ownership goals, and the look you want for the home.</p>
+        </div>
+        <div class="shingle-choice__layout">
+          <div class="shingle-choice__grid">
+            <article class="choice-card choice-card--budget">
+              <div class="choice-card__icon">$</div>
+              <h3>Budget & ROI</h3>
+              <p>Concrete tile usually provides the strongest value for homeowners who want tile performance without clay-level cost.</p>
+              <ul class="choice-list">
+                <li>Lower upfront cost than clay</li>
+                <li>Excellent durability for Florida climate</li>
+                <li>Strong long-term replacement value</li>
+              </ul>
+            </article>
+
+            <article class="choice-card choice-card--durability">
+              <div class="choice-card__icon">✓</div>
+              <h3>Longevity & Performance</h3>
+              <p>Clay is the premium lifespan option, while concrete remains a high-performing system when properly installed.</p>
+              <ul class="choice-list">
+                <li>Clay can reach 75-100+ years</li>
+                <li>Concrete commonly reaches 40-50+ years</li>
+                <li>Both perform well in heat and storms</li>
+              </ul>
+            </article>
+
+            <article class="choice-card choice-card--style">
+              <div class="choice-card__icon">🏠</div>
+              <h3>Style & Profile</h3>
+              <p>Profile choice changes curb appeal significantly, from clean modern flat tile to classic Spanish barrel shapes.</p>
+              <ul class="choice-list">
+                <li>Flat tile for modern homes</li>
+                <li>S-tile for balanced traditional look</li>
+                <li>Barrel/Mission for Mediterranean style</li>
+              </ul>
+            </article>
+          </div>
+
+          <aside class="choice-summary">
+            <div class="choice-summary__badge">Quick Recommendation</div>
+            <h3>Most Homeowners Start with Concrete Tile</h3>
+            <p>It offers a reliable balance of cost, performance, and visual impact for long-term Florida ownership.</p>
+            <div class="choice-summary__points">
+              <div><strong>Best all-around:</strong> Concrete Tile</div>
+              <div><strong>Best premium lifespan:</strong> Clay Tile</div>
+              <div><strong>Best style match:</strong> Profile-based selection</div>
+            </div>
+            <button class="btn btn--primary w-full" data-modal-open="schedule">Get a Personalized Recommendation</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="section__head">
@@ -307,5 +364,56 @@
       </div>
     </footer>
   </main>
+
+  <div class="modal" data-modal="schedule" aria-hidden="true" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-label="Schedule inspection">
+      <div class="modal__head">
+        <h2>Schedule an Inspection</h2>
+        <button class="iconbtn" data-modal-close aria-label="Close">×</button>
+      </div>
+
+      <form class="form" action="https://formspree.io/f/mqedpojk" method="POST">
+        <input type="hidden" name="source" value="Schedule Inspection Modal" />
+        <div class="form__row">
+          <label>
+            Full Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required />
+          </label>
+        </div>
+
+        <div class="form__row">
+          <label>
+            Address (City is fine)
+            <input type="text" name="address" required />
+          </label>
+        </div>
+
+        <label>
+          What do you need help with?
+          <select name="need" required>
+            <option value="" selected disabled>Select one</option>
+            <option>Leak / Repair</option>
+            <option>Replacement</option>
+            <option>Inspection / Maintenance</option>
+            <option>Storm / Insurance</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>
+          If you selected Other, please leave a comment on how we can assist.
+          <textarea name="notes" rows="4"></textarea>
+        </label>
+
+        <button class="btn btn--primary w-full" type="submit">Request Scheduling</button>
+        <p class="fineprint">Prefer immediate help? Contact us by call/text.</p>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
