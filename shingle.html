@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <title>Shingle Roofing | J&G Roofing LLC</title>
   <meta name="description" content="Comprehensive guide to asphalt shingle roofing in South Florida. Learn about architectural shingles, 3-tab options, wind ratings, and installation." />
   <link rel="stylesheet" href="assets/css/base.css" />
@@ -14,8 +17,82 @@
   <script defer src="assets/js/main.js"></script>
 </head>
 <body class="page-shingle">
-  <div class="topbar"><div class="container topbar__inner"><span class="topbar__item">Florida Certified Roofing Contractor • License <strong>#CCC1336956</strong></span><a class="topbar__link" href="https://www.myfloridalicense.com/" target="_blank" rel="noopener">Verify on MyFloridaLicense.com</a></div></div>
-  <header class="header"><div class="container header__inner"><a class="brand" href="index.html"><img src="assets/img/tLogo.png" alt="J&G Roofing LLC Logo" class="brand__logo" /><span class="brand__text"><span class="brand__name">J&G Roofing LLC</span><span class="brand__tag">South Florida • Hurricane-Ready Roofing</span></span></a><nav class="nav" aria-label="Primary"><div class="nav__item nav__item--drop"><a href="services.html" class="nav__link">Services</a><div class="nav__dropdown"><a href="services-installation.html">Installation</a><a href="services-repairs.html">Repairs & Replacement</a><a href="services-maintenance.html">Inspection & Maintenance</a></div></div><a href="index.html#projects">Projects</a><a href="index.html#contact">Contact</a></nav></div></header>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">
+        Florida Certified Roofing Contractor • License <strong>#CCC1336956</strong>
+      </span>
+      <a class="topbar__link" href="https://www.myfloridalicense.com/" target="_blank" rel="noopener">
+        Verify on MyFloridaLicense.com
+      </a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="J&G Roofing Home">
+        <img src="assets/img/tLogo.png" alt="J&G Roofing LLC Logo" class="brand__logo" />
+        <span class="brand__text">
+          <span class="brand__name">J&G Roofing LLC</span>
+          <span class="brand__tag">South Florida • Hurricane-Ready Roofing</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <div class="nav__item nav__item--drop">
+          <a href="services.html" class="nav__link">Services</a>
+          <div class="nav__dropdown" aria-label="Service links">
+            <div class="nav__group">
+              <span class="nav__group-title">Installation</span>
+              <a href="services-installation.html">Overview</a>
+              <a href="shingle.html">Shingle Roofing</a>
+              <a href="tile.html">Tile Roofing</a>
+              <a href="metal.html">Metal Roofing</a>
+            </div>
+            <div class="nav__group">
+              <span class="nav__group-title">Other Services</span>
+              <a href="services-repairs.html">Repairs & Replacement</a>
+              <a href="services-maintenance.html">Inspection & Maintenance</a>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#areas">Service Area</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header__cta">
+        <button class="btn btn--primary" data-modal-open="schedule" aria-label="Schedule an inspection">
+          <i class="fas fa-calendar-check"></i> Schedule
+        </button>
+      </div>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-mobile-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" data-mobile-menu hidden>
+      <div class="container mobile__inner">
+        <a href="services.html" data-mobile-close>Services</a>
+        <div class="mobile__services">
+          <a href="services-installation.html" data-mobile-close>Installation</a>
+          <a href="shingle.html" data-mobile-close>Shingle Roofing</a>
+          <a href="tile.html" data-mobile-close>Tile Roofing</a>
+          <a href="metal.html" data-mobile-close>Metal Roofing</a>
+          <a href="services-repairs.html" data-mobile-close>Repairs & Replacement</a>
+          <a href="services-maintenance.html" data-mobile-close>Inspection & Maintenance</a>
+        </div>
+        <a href="index.html#areas" data-mobile-close>Service Area</a>
+        <a href="index.html#faq" data-mobile-close>FAQ</a>
+        <a href="index.html#contact" data-mobile-close>Contact</a>
+
+        <div class="mobile__cta">
+          <button class="btn btn--primary w-full" data-modal-open="schedule"><i class="fas fa-calendar-check"></i> Schedule</button>
+        </div>
+      </div>
+    </div>
+  </header>
   
   <main>
     <section class="service-hero">
@@ -24,7 +101,7 @@
         <h1 class="service-hero__title">Shingle Roofing</h1>
         <p class="service-hero__sub">Asphalt shingle roofing is the most popular residential roofing material in Florida, combining affordability, proven performance, and wide availability.</p>
         <div class="service-hero__actions">
-          <a class="btn btn--primary" href="tel:2395657734">Call</a>
+          <a class="btn btn--primary" href="tel:2395657734"><i class="fas fa-phone"></i> (239) 565-7734</a>
           <button class="btn btn--dark" data-modal-open="schedule">Get Free Estimate</button>
         </div>
       </div>
@@ -357,10 +434,6 @@
                 <a class="contact-quick__value" href="tel:2395657734">(239) 565-7734</a>
               </div>
               <div class="contact-quick__item">
-                <span class="contact-quick__label">Text</span>
-                <a class="contact-quick__value" href="sms:2395657734">(239) 565-7734</a>
-              </div>
-              <div class="contact-quick__item">
                 <span class="contact-quick__label">Service Area</span>
                 <span class="contact-quick__value">South Florida</span>
               </div>
@@ -422,15 +495,15 @@
         <div class="footer__col">
           <div class="footer__head">Contact</div>
           <a href="tel:2395657734">Call: (239) 565-7734</a>
-          <a href="sms:2395657734">Text: (239) 565-7734</a>
           <a href="mailto:jgarcia199854@yahoo.com">Email: jgarcia199854@yahoo.com</a>
         </div>
         <div class="footer__col">
           <div class="footer__head">Quick Links</div>
           <a href="services.html">Services</a>
-          <a href="index.html#hurricane">Hurricane-Ready</a>
-          <a href="index.html#insurance">Insurance Help</a>
-          <a href="index.html#pricing">Pricing</a>
+          <a href="services-installation.html">Installation</a>
+          <a href="services-repairs.html">Repair and Replacement</a>
+          <a href="services-maintenance.html">Maintenance and Inspection</a>
+          <a href="index.html#areas">Service Area</a>
         </div>
       </div>
       <div class="container footer__bottom">

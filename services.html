@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <title>Roofing Services | J&G Roofing LLC</title>
   <meta name="description" content="Explore installation, replacement, repairs, and inspection & maintenance services from J&G Roofing LLC." />
   <link rel="stylesheet" href="assets/css/base.css" />
@@ -41,15 +44,30 @@
         <div class="nav__item nav__item--drop">
           <a href="services.html" class="nav__link">Services</a>
           <div class="nav__dropdown" aria-label="Service links">
-            <a href="services-installation.html">Installation</a>
-            <a href="services-repairs.html">Repairs & Replacement</a>
-            <a href="services-maintenance.html">Inspection & Maintenance</a>
+            <div class="nav__group">
+              <span class="nav__group-title">Installation</span>
+              <a href="services-installation.html">Overview</a>
+              <a href="shingle.html">Shingle Roofing</a>
+              <a href="tile.html">Tile Roofing</a>
+              <a href="metal.html">Metal Roofing</a>
+            </div>
+            <div class="nav__group">
+              <span class="nav__group-title">Other Services</span>
+              <a href="services-repairs.html">Repairs & Replacement</a>
+              <a href="services-maintenance.html">Inspection & Maintenance</a>
+            </div>
           </div>
         </div>
-        <a href="index.html#projects">Projects</a>
+        <a href="index.html#areas">Service Area</a>
         <a href="index.html#faq">FAQ</a>
         <a href="index.html#contact">Contact</a>
       </nav>
+
+      <div class="header__cta">
+        <button class="btn btn--primary" data-modal-open="schedule" aria-label="Schedule an inspection">
+          <i class="fas fa-calendar-check"></i> Schedule
+        </button>
+      </div>
 
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-mobile-toggle>
         <span></span><span></span><span></span>
@@ -61,12 +79,19 @@
         <a href="services.html" data-mobile-close>Services</a>
         <div class="mobile__services">
           <a href="services-installation.html" data-mobile-close>Installation</a>
+          <a href="shingle.html" data-mobile-close>Shingle Roofing</a>
+          <a href="tile.html" data-mobile-close>Tile Roofing</a>
+          <a href="metal.html" data-mobile-close>Metal Roofing</a>
           <a href="services-repairs.html" data-mobile-close>Repairs & Replacement</a>
           <a href="services-maintenance.html" data-mobile-close>Inspection & Maintenance</a>
         </div>
-        <a href="index.html#projects" data-mobile-close>Projects</a>
+        <a href="index.html#areas" data-mobile-close>Service Area</a>
         <a href="index.html#faq" data-mobile-close>FAQ</a>
         <a href="index.html#contact" data-mobile-close>Contact</a>
+
+        <div class="mobile__cta">
+          <button class="btn btn--primary w-full" data-modal-open="schedule"><i class="fas fa-calendar-check"></i> Schedule</button>
+        </div>
       </div>
     </div>
   </header>
@@ -78,7 +103,7 @@
         <h1 class="service-hero__title">Licensed Roofing Services You Can Trust</h1>
         <p class="service-hero__sub">Clear recommendations, quality materials, and workmanship backed by warranty.</p>
         <div class="service-hero__actions">
-          <a class="btn btn--primary" href="tel:2395657734"><i class="fas fa-phone"></i> Call</a>
+          <a class="btn btn--primary" href="tel:2395657734"><i class="fas fa-phone"></i> (239) 565-7734</a>
           <button class="btn btn--dark" data-modal-open="schedule"><i class="fas fa-calendar-check"></i> Schedule</button>
         </div>
       </div>
@@ -313,9 +338,10 @@
         <div class="footer__col">
           <div class="footer__head">Quick Links</div>
           <a href="services.html">Services</a>
-          <a href="index.html#hurricane">Hurricane-Ready</a>
-          <a href="index.html#insurance">Insurance Help</a>
-          <a href="index.html#pricing">Pricing</a>
+          <a href="services-installation.html">Installation</a>
+          <a href="services-repairs.html">Repair and Replacement</a>
+          <a href="services-maintenance.html">Maintenance and Inspection</a>
+          <a href="index.html#areas">Service Area</a>
         </div>
       </div>
 

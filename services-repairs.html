@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <title>Roof Repairs & Replacement | J&G Roofing LLC</title>
   <meta name="description" content="Roof repair services for active leaks and damage, plus full replacement options for aging roofs. We help South Florida homeowners decide repair vs. replacement." />
   <link rel="stylesheet" href="assets/css/base.css" />
@@ -10,11 +13,86 @@
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/services-detail.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-  <div class="topbar"><div class="container topbar__inner"><span class="topbar__item">Florida Certified Roofing Contractor • License <strong>#CCC1336956</strong></span><a class="topbar__link" href="https://www.myfloridalicense.com/" target="_blank" rel="noopener">Verify on MyFloridaLicense.com</a></div></div>
-  <header class="header"><div class="container header__inner"><a class="brand" href="index.html"><img src="assets/img/tLogo.png" alt="J&G Roofing LLC Logo" class="brand__logo" /><span class="brand__text"><span class="brand__name">J&G Roofing LLC</span><span class="brand__tag">South Florida • Hurricane-Ready Roofing</span></span></a><nav class="nav" aria-label="Primary"><div class="nav__item nav__item--drop"><a href="services.html" class="nav__link">Services</a><div class="nav__dropdown"><a href="services-installation.html">Installation</a><a href="services-repairs.html">Repairs & Replacement</a><a href="services-maintenance.html">Inspection & Maintenance</a></div></div><a href="index.html#projects">Projects</a><a href="index.html#contact">Contact</a></nav></div></header>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">
+        Florida Certified Roofing Contractor • License <strong>#CCC1336956</strong>
+      </span>
+      <a class="topbar__link" href="https://www.myfloridalicense.com/" target="_blank" rel="noopener">
+        Verify on MyFloridaLicense.com
+      </a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="J&G Roofing Home">
+        <img src="assets/img/tLogo.png" alt="J&G Roofing LLC Logo" class="brand__logo" />
+        <span class="brand__text">
+          <span class="brand__name">J&G Roofing LLC</span>
+          <span class="brand__tag">South Florida • Hurricane-Ready Roofing</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <div class="nav__item nav__item--drop">
+          <a href="services.html" class="nav__link">Services</a>
+          <div class="nav__dropdown" aria-label="Service links">
+            <div class="nav__group">
+              <span class="nav__group-title">Installation</span>
+              <a href="services-installation.html">Overview</a>
+              <a href="shingle.html">Shingle Roofing</a>
+              <a href="tile.html">Tile Roofing</a>
+              <a href="metal.html">Metal Roofing</a>
+            </div>
+            <div class="nav__group">
+              <span class="nav__group-title">Other Services</span>
+              <a href="services-repairs.html">Repairs & Replacement</a>
+              <a href="services-maintenance.html">Inspection & Maintenance</a>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#areas">Service Area</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header__cta">
+        <button class="btn btn--primary" data-modal-open="schedule" aria-label="Schedule an inspection">
+          <i class="fas fa-calendar-check"></i> Schedule
+        </button>
+      </div>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-mobile-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" data-mobile-menu hidden>
+      <div class="container mobile__inner">
+        <a href="services.html" data-mobile-close>Services</a>
+        <div class="mobile__services">
+          <a href="services-installation.html" data-mobile-close>Installation</a>
+          <a href="shingle.html" data-mobile-close>Shingle Roofing</a>
+          <a href="tile.html" data-mobile-close>Tile Roofing</a>
+          <a href="metal.html" data-mobile-close>Metal Roofing</a>
+          <a href="services-repairs.html" data-mobile-close>Repairs & Replacement</a>
+          <a href="services-maintenance.html" data-mobile-close>Inspection & Maintenance</a>
+        </div>
+        <a href="index.html#areas" data-mobile-close>Service Area</a>
+        <a href="index.html#faq" data-mobile-close>FAQ</a>
+        <a href="index.html#contact" data-mobile-close>Contact</a>
+
+        <div class="mobile__cta">
+          <button class="btn btn--primary w-full" data-modal-open="schedule"><i class="fas fa-calendar-check"></i> Schedule</button>
+        </div>
+      </div>
+    </div>
+  </header>
   <main>
     <section class="service-hero">
       <div class="container">
@@ -22,7 +100,7 @@
         <h1 class="service-hero__title">Roof Repairs & Replacement</h1>
         <p class="service-hero__sub">Do you have an active leak or damage, or is your roof showing age? We help you decide whether a targeted repair or full replacement makes the most sense for your home.</p>
         <div class="service-hero__actions">
-          <a class="btn btn--primary" href="tel:2395657734">Call</a>
+          <a class="btn btn--primary" href="tel:2395657734"><i class="fas fa-phone"></i> (239) 565-7734</a>
           <button class="btn btn--dark" data-modal-open="schedule">Get Free Estimate</button>
         </div>
       </div>
@@ -34,24 +112,34 @@
           <h2>Repair vs. Replacement: How to Decide</h2>
           <p>Most roofing issues fall into two categories. Here's how we help you choose the right path.</p>
         </div>
-        <div class="service-grid">
-          <article class="card">
-            <h3>Choose Repair If:</h3>
-            <ul class="bullets">
-              <li>Roof is under 15-20 years old</li>
-              <li>Damage is localized (one leak, storm damage)</li>
-              <li>Rest of roof is in good condition</li>
-              <li>You want the most affordable short-term fix</li>
-            </ul>
+        <div class="decision-grid">
+          <article class="decision-card">
+            <div class="decision-card__image">
+              <img src="assets/img/RRepair.jpg" alt="Roof repair work" />
+            </div>
+            <div class="decision-card__content">
+              <h3 class="decision-card__title">Choose Repair If:</h3>
+              <ul class="bullets">
+                <li>Roof is under 15-20 years old</li>
+                <li>Damage is localized (one leak, storm damage)</li>
+                <li>Rest of roof is in good condition</li>
+                <li>You want the most affordable short-term fix</li>
+              </ul>
+            </div>
           </article>
-          <article class="card">
-            <h3>Choose Replacement If:</h3>
-            <ul class="bullets">
-              <li>Roof is near or past its lifespan</li>
-              <li>Multiple leaks or widespread damage</li>
-              <li>Repeated repairs within the last 2 years</li>
-              <li>You want long-term performance and curb appeal</li>
-            </ul>
+          <article class="decision-card">
+            <div class="decision-card__image">
+              <img src="assets/img/RReplacement.jpg" alt="Roof replacement installation" />
+            </div>
+            <div class="decision-card__content">
+              <h3 class="decision-card__title">Choose Replacement If:</h3>
+              <ul class="bullets">
+                <li>Roof is near or past its lifespan</li>
+                <li>Multiple leaks or widespread damage</li>
+                <li>Repeated repairs within the last 2 years</li>
+                <li>You want long-term performance and curb appeal</li>
+              </ul>
+            </div>
           </article>
         </div>
       </div>
@@ -63,26 +151,35 @@
           <h2>Repair Services</h2>
           <p>Fast diagnosis and targeted fixes to stop leaks and restore water protection.</p>
         </div>
-        <div class="service-grid">
-          <article class="card">
-            <h3>Common Repair Types</h3>
-            <ul class="bullets">
-              <li>Flashing and valley failures</li>
-              <li>Pipe boots and penetration leaks</li>
-              <li>Storm-lifted shingles/tiles</li>
-              <li>Fastener and seam issues on metal roofs</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Repair Process</h3>
-            <ul class="bullets">
-              <li>Leak tracing and moisture check</li>
-              <li>Photo-documented findings</li>
-              <li>Targeted fix with matching materials</li>
-              <li>Post-repair verification</li>
-            </ul>
-          </article>
-        </div>
+        <article class="repair-feature">
+          <div class="repair-feature__content">
+            <div class="repair-columns">
+              <section class="repair-block">
+                <span class="repair-pill">Fast Leak Response</span>
+                <h3>Common Repair Types</h3>
+                <ul class="bullets">
+                  <li>Flashing and valley failures</li>
+                  <li>Pipe boots and penetration leaks</li>
+                  <li>Storm-lifted shingles/tiles</li>
+                  <li>Fastener and seam issues on metal roofs</li>
+                </ul>
+              </section>
+              <section class="repair-block">
+                <span class="repair-pill">Clear Workflow</span>
+                <h3>Repair Process</h3>
+                <ol class="repair-steps">
+                  <li><strong>Inspect:</strong> Leak tracing and moisture check</li>
+                  <li><strong>Document:</strong> Photo-documented findings</li>
+                  <li><strong>Fix:</strong> Targeted repair with matching materials</li>
+                  <li><strong>Verify:</strong> Post-repair performance check</li>
+                </ol>
+              </section>
+            </div>
+          </div>
+          <div class="repair-feature__media">
+            <img src="assets/img/RRepair2.jpg" alt="Roof repair work in progress" />
+          </div>
+        </article>
       </div>
     </section>
 
@@ -92,110 +189,104 @@
           <h2>When Roof Replacement Makes Sense</h2>
           <p>Full replacement restores system integrity when repairs are no longer cost-effective.</p>
         </div>
-        <div class="service-grid">
-          <article class="card">
-            <h3>Signs You Need Replacement</h3>
-            <ul class="bullets">
-              <li>Widespread leaks across multiple slopes</li>
-              <li>Aging roof near end-of-life</li>
-              <li>Repeated repairs with recurring failures</li>
-              <li>Deck or underlayment deterioration</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Replacement Benefits</h3>
-            <ul class="bullets">
-              <li>Restore full weather protection</li>
-              <li>Upgrade to better materials</li>
-              <li>Eliminate recurring repair costs</li>
-              <li>Improve home value and insurance rates</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Replacement Workflow</h3>
-            <ul class="bullets">
-              <li>Inspection and scope definition</li>
-              <li>Tear-off and deck evaluation</li>
-              <li>Install new waterproofing layers</li>
-              <li>Install selected roofing material</li>
-            </ul>
-          </article>
-        </div>
+        <article class="repair-feature repair-feature--reverse replacement-feature">
+          <div class="repair-feature__content">
+            <div class="repair-columns">
+              <section class="repair-block">
+                <span class="repair-pill">Replacement Triggers</span>
+                <h3>Signs You Need Replacement</h3>
+                <ul class="bullets">
+                  <li>Widespread leaks across multiple slopes</li>
+                  <li>Aging roof near end-of-life</li>
+                  <li>Repeated repairs with recurring failures</li>
+                  <li>Deck or underlayment deterioration</li>
+                </ul>
+              </section>
+              <section class="repair-block">
+                <span class="repair-pill">Long-Term Value</span>
+                <h3>Benefits + Workflow</h3>
+                <ul class="bullets">
+                  <li>Restore full weather protection and upgrade material quality</li>
+                  <li>Reduce recurring repair costs and improve home value</li>
+                </ul>
+                <ol class="repair-steps">
+                  <li><strong>Inspect:</strong> Scope definition and replacement planning</li>
+                  <li><strong>Prepare:</strong> Tear-off and deck evaluation</li>
+                  <li><strong>Install:</strong> New waterproofing layers and selected material</li>
+                  <li><strong>Finish:</strong> Final quality check and site cleanup</li>
+                </ol>
+              </section>
+            </div>
+          </div>
+          <div class="repair-feature__media">
+            <img src="assets/img/RReplacement.jpg" alt="Roof replacement project in progress" />
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section work-gallery section--alt">
+    
+    <section class="installation-contact section" id="contact">
       <div class="container">
-        <div class="section__head">
-          <h2>Recent Repair & Replacement Work</h2>
-          <p>Examples of projects where we stopped active leaks and restored long-term roof performance.</p>
+        <div class="contact-header">
+          <h2>Need Repair or Full Replacement Guidance?</h2>
+          <p>Get a fast assessment and clear recommendations before you commit. We serve homeowners across South Florida.</p>
         </div>
-        <div class="work-gallery__grid">
-          <article class="card work-card">
-            <div class="work-card__media">
-              <img src="assets/img/hero-2.jpg" alt="Roof repair project after leak mitigation" />
+        <div class="contact-layout">
+          <div class="contact-quick">
+            <div class="contact-quick__card">
+              <h3>Get in Touch</h3>
+              <div class="contact-quick__item">
+                <span class="contact-quick__label">Call</span>
+                <a class="contact-quick__value" href="tel:2395657734">(239) 565-7734</a>
+              </div>
+              <div class="contact-quick__item">
+                <span class="contact-quick__label">Service Area</span>
+                <span class="contact-quick__value">South Florida</span>
+              </div>
+              <div class="contact-quick__item">
+                <span class="contact-quick__label">License</span>
+                <span class="contact-quick__value"><strong>#CCC1336956</strong></span>
+              </div>
+              <div class="contact-quick__actions">
+                <a class="btn btn--primary btn--lg" href="tel:2395657734">Call Now</a>
+                <button class="btn btn--secondary btn--lg" data-modal-open="schedule">Schedule</button>
+              </div>
             </div>
-            <h3>Leak Repair Project</h3>
-            <p>Targeted leak source correction with flashing and penetration detailing.</p>
-          </article>
-          <article class="card work-card">
-            <div class="work-card__media">
-              <img src="assets/img/ShingleRoofing.jpeg" alt="Shingle replacement project" />
-            </div>
-            <h3>Partial Slope Replacement</h3>
-            <p>Damaged sections replaced to restore weather protection and roof integrity.</p>
-          </article>
-          <article class="card work-card">
-            <div class="work-card__media">
-              <img src="assets/img/hero-3.png" alt="Completed roof replacement with upgraded system" />
-            </div>
-            <h3>Full Replacement Upgrade</h3>
-            <p>Aged roof replaced with a stronger system and updated waterproofing layers.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact container" id="contact">
-      <header class="contact__head">
-        <h2>Get a Fast Roofing Inspection</h2>
-        <p>Call for urgent leaks. Otherwise send a request and we'll reach out to schedule. South Florida service.</p>
-      </header>
-      <div class="contact__grid">
-        <div class="card contact__info">
-          <h3>Contact</h3>
-          <div class="contact__row">
-            <span class="contact__label">Call</span>
-            <a class="contact__value" href="tel:2395657734">(239) 565-7734</a>
           </div>
-          <div class="contact__row">
-            <span class="contact__label">Text</span>
-            <a class="contact__value" href="sms:2395657734">(239) 565-7734</a>
+          <div class="contact-form-wrap">
+            <h3>Request Free Estimate</h3>
+            <form class="installation-form" action="https://formspree.io/f/mqedpojk" method="POST">
+              <input type="hidden" name="source" value="Repairs & Replacement Page" />
+              <div class="form-group">
+                <label>Full Name</label>
+                <input name="name" type="text" required />
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input name="phone" type="tel" required />
+              </div>
+              <div class="form-group">
+                <label>Address (City is fine)</label>
+                <input name="city" type="text" />
+              </div>
+              <div class="form-group">
+                <label>What do you need help with?</label>
+                <select name="service" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option>Roof Replacement</option>
+                  <option>Roof Repair / Leak</option>
+                  <option>Inspection / Maintenance</option>
+                  <option>Maintenance Plan</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Notes (optional)</label>
+                <textarea name="message" rows="4"></textarea>
+              </div>
+              <button class="btn btn--primary btn--lg" type="submit">Request Scheduling</button>
+            </form>
           </div>
-          <div class="contact__row">
-            <span class="contact__label">Service Area</span>
-            <span class="contact__value">South Florida</span>
-          </div>
-          <div class="contact__row">
-            <span class="contact__label">License</span>
-            <span class="contact__value"><strong>#CCC1336956</strong></span>
-          </div>
-          <div class="contact__cta">
-            <a class="btn btn--primary" href="tel:2395657734">Call Now</a>
-            <button class="btn btn--dark" data-modal-open="schedule">Schedule</button>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Request Scheduling</h3>
-          <form class="form" action="https://formspree.io/f/mqedpojk" method="POST">
-            <input type="hidden" name="source" value="Service Page Contact" />
-            <label>Full Name<input name="name" type="text" required /></label>
-            <label>Phone<input name="phone" type="tel" required /></label>
-            <label>Address (City is fine)<input name="city" type="text" /></label>
-            <label>What do you need help with?<select name="service" required><option value="" disabled selected>Select one</option><option>Roof Replacement</option><option>Roof Repair / Leak</option><option>Inspection / Maintenance</option><option>Maintenance Plan</option></select></label>
-            <label>Notes (optional)<textarea name="message" rows="4"></textarea></label>
-            <button class="btn btn--primary" type="submit">Request Scheduling</button>
-          </form>
         </div>
       </div>
     </section>
@@ -211,15 +302,15 @@
         <div class="footer__col">
           <div class="footer__head">Contact</div>
           <a href="tel:2395657734">Call: (239) 565-7734</a>
-          <a href="sms:2395657734">Text: (239) 565-7734</a>
           <a href="mailto:jgarcia199854@yahoo.com">Email: jgarcia199854@yahoo.com</a>
         </div>
         <div class="footer__col">
           <div class="footer__head">Quick Links</div>
           <a href="services.html">Services</a>
-          <a href="index.html#hurricane">Hurricane-Ready</a>
-          <a href="index.html#insurance">Insurance Help</a>
-          <a href="index.html#pricing">Pricing</a>
+          <a href="services-installation.html">Installation</a>
+          <a href="services-repairs.html">Repair and Replacement</a>
+          <a href="services-maintenance.html">Maintenance and Inspection</a>
+          <a href="index.html#areas">Service Area</a>
         </div>
       </div>
       <div class="container footer__bottom">

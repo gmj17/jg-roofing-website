@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <title>Roof Inspection & Maintenance | J&G Roofing LLC</title>
   <meta name="description" content="Inspection identifies issues, maintenance prevents them. Schedule roof inspections and preventative maintenance across South Florida." />
   <link rel="stylesheet" href="assets/css/base.css" />
@@ -10,11 +13,86 @@
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/services-detail.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
-<body>
-  <div class="topbar"><div class="container topbar__inner"><span class="topbar__item">Florida Certified Roofing Contractor • License <strong>#CCC1336956</strong></span><a class="topbar__link" href="https://www.myfloridalicense.com/" target="_blank" rel="noopener">Verify on MyFloridaLicense.com</a></div></div>
-  <header class="header"><div class="container header__inner"><a class="brand" href="index.html"><img src="assets/img/tLogo.png" alt="J&G Roofing LLC Logo" class="brand__logo" /><span class="brand__text"><span class="brand__name">J&G Roofing LLC</span><span class="brand__tag">South Florida • Hurricane-Ready Roofing</span></span></a><nav class="nav" aria-label="Primary"><div class="nav__item nav__item--drop"><a href="services.html" class="nav__link">Services</a><div class="nav__dropdown"><a href="services-installation.html">Installation</a><a href="services-repairs.html">Repairs & Replacement</a><a href="services-maintenance.html">Inspection & Maintenance</a></div></div><a href="index.html#projects">Projects</a><a href="index.html#contact">Contact</a></nav></div></header>
+<body class="page-maintenance">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">
+        Florida Certified Roofing Contractor • License <strong>#CCC1336956</strong>
+      </span>
+      <a class="topbar__link" href="https://www.myfloridalicense.com/" target="_blank" rel="noopener">
+        Verify on MyFloridaLicense.com
+      </a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="J&G Roofing Home">
+        <img src="assets/img/tLogo.png" alt="J&G Roofing LLC Logo" class="brand__logo" />
+        <span class="brand__text">
+          <span class="brand__name">J&G Roofing LLC</span>
+          <span class="brand__tag">South Florida • Hurricane-Ready Roofing</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <div class="nav__item nav__item--drop">
+          <a href="services.html" class="nav__link">Services</a>
+          <div class="nav__dropdown" aria-label="Service links">
+            <div class="nav__group">
+              <span class="nav__group-title">Installation</span>
+              <a href="services-installation.html">Overview</a>
+              <a href="shingle.html">Shingle Roofing</a>
+              <a href="tile.html">Tile Roofing</a>
+              <a href="metal.html">Metal Roofing</a>
+            </div>
+            <div class="nav__group">
+              <span class="nav__group-title">Other Services</span>
+              <a href="services-repairs.html">Repairs & Replacement</a>
+              <a href="services-maintenance.html">Inspection & Maintenance</a>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#areas">Service Area</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header__cta">
+        <button class="btn btn--primary" data-modal-open="schedule" aria-label="Schedule an inspection">
+          <i class="fas fa-calendar-check"></i> Schedule
+        </button>
+      </div>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-mobile-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" data-mobile-menu hidden>
+      <div class="container mobile__inner">
+        <a href="services.html" data-mobile-close>Services</a>
+        <div class="mobile__services">
+          <a href="services-installation.html" data-mobile-close>Installation</a>
+          <a href="shingle.html" data-mobile-close>Shingle Roofing</a>
+          <a href="tile.html" data-mobile-close>Tile Roofing</a>
+          <a href="metal.html" data-mobile-close>Metal Roofing</a>
+          <a href="services-repairs.html" data-mobile-close>Repairs & Replacement</a>
+          <a href="services-maintenance.html" data-mobile-close>Inspection & Maintenance</a>
+        </div>
+        <a href="index.html#areas" data-mobile-close>Service Area</a>
+        <a href="index.html#faq" data-mobile-close>FAQ</a>
+        <a href="index.html#contact" data-mobile-close>Contact</a>
+
+        <div class="mobile__cta">
+          <button class="btn btn--primary w-full" data-modal-open="schedule"><i class="fas fa-calendar-check"></i> Schedule</button>
+        </div>
+      </div>
+    </div>
+  </header>
   <main>
     <section class="service-hero">
       <div class="container">
@@ -22,8 +100,13 @@
         <h1 class="service-hero__title">Roof Inspection & Maintenance</h1>
         <p class="service-hero__sub">Inspection identifies issues, maintenance prevents them. Keep your roof performing with proactive care.</p>
         <div class="service-hero__actions">
-          <a class="btn btn--primary" href="tel:2395657734">Call</a>
+          <a class="btn btn--primary" href="tel:2395657734"><i class="fas fa-phone"></i> (239) 565-7734</a>
           <button class="btn btn--dark" data-modal-open="schedule">Schedule Inspection</button>
+        </div>
+        <div class="maintenance-trust" aria-label="Service highlights">
+          <div class="maintenance-trust__item"><strong>Photo-backed reports</strong><span>Know exactly what needs attention</span></div>
+          <div class="maintenance-trust__item"><strong>Storm-ready planning</strong><span>Seasonal checks before severe weather</span></div>
+          <div class="maintenance-trust__item"><strong>Clear next steps</strong><span>Prioritized fixes by urgency and budget</span></div>
         </div>
       </div>
     </section>
@@ -32,37 +115,37 @@
       <div class="container">
         <div class="section__head">
           <h2>Inspection Services</h2>
-          <p>We document roof conditions with clear findings that help you plan repairs and prevent future issues.</p>
+          <p>Our inspections are built to reduce risk and help you make smart roofing decisions quickly.</p>
         </div>
-        <div class="service-grid">
-          <article class="card">
-            <h3>What We Inspect</h3>
-            <ul class="bullets">
-              <li>Shingle/tile displacement and loss</li>
-              <li>Metal panel uplift and seam integrity</li>
-              <li>Flashing transitions and penetrations</li>
-              <li>Interior indicators of water intrusion</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Report Quality</h3>
-            <ul class="bullets">
-              <li>Photo-backed findings by roof area</li>
-              <li>Clear severity and urgency notes</li>
-              <li>Repair vs replacement guidance</li>
-              <li>Prioritized next steps</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Inspection Process</h3>
-            <ul class="bullets">
-              <li>On-site walkthrough and visual survey</li>
-              <li>Critical-point condition capture</li>
-              <li>Written summary with recommendations</li>
-              <li>Follow-up planning call if needed</li>
-            </ul>
-          </article>
-        </div>
+        <article class="repair-feature repair-feature--reverse maintenance-feature">
+          <div class="repair-feature__content">
+            <div class="repair-columns">
+              <section class="repair-block">
+                <span class="repair-pill">What We Inspect</span>
+                <h3>Critical Roof Components</h3>
+                <ul class="bullets">
+                  <li>Shingle/tile displacement and surface wear</li>
+                  <li>Metal panel uplift, fasteners, and seam integrity</li>
+                  <li>Flashing transitions, valleys, and penetrations</li>
+                  <li>Interior indicators of active or past water intrusion</li>
+                </ul>
+              </section>
+              <section class="repair-block">
+                <span class="repair-pill">Decision Clarity</span>
+                <h3>Report + Action Plan</h3>
+                <ol class="repair-steps">
+                  <li><strong>Document:</strong> Photo-backed findings by roof area</li>
+                  <li><strong>Prioritize:</strong> Clear severity and urgency notes</li>
+                  <li><strong>Recommend:</strong> Repair vs replacement guidance</li>
+                  <li><strong>Plan:</strong> Next steps aligned to timeline and budget</li>
+                </ol>
+              </section>
+            </div>
+          </div>
+          <div class="repair-feature__media">
+            <img src="assets/img/roof-inspection.jpg" alt="Professional roof inspection in progress" />
+          </div>
+        </article>
       </div>
     </section>
 
@@ -70,36 +153,36 @@
       <div class="container">
         <div class="section__head">
           <h2>Maintenance Services</h2>
-          <p>Preventative maintenance extends roof life by catching failures early, before they become expensive leak events.</p>
+          <p>Preventative care protects your investment, extends roof lifespan, and reduces surprise repair costs.</p>
         </div>
-        <div class="service-grid">
-          <article class="card">
-            <h3>Maintenance by Material</h3>
-            <ul class="bullets">
-              <li>Shingle: granule loss, seal strip and edge checks</li>
-              <li>Tile: cracked tile replacement and underlayment watchpoints</li>
-              <li>Metal: seam, fastener, and coating condition checks</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Program Inclusions</h3>
-            <ul class="bullets">
-              <li>Scheduled condition reviews</li>
-              <li>Minor corrective adjustments</li>
-              <li>Photo logs for trend tracking</li>
-              <li>Seasonal storm-readiness checks</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Maintenance Cycle</h3>
-            <ul class="bullets">
-              <li>Baseline inspection and checklist</li>
-              <li>Routine follow-up visits</li>
-              <li>Priority repair recommendations</li>
-              <li>Annual planning summary</li>
-            </ul>
-          </article>
-        </div>
+        <article class="repair-feature maintenance-feature">
+          <div class="repair-feature__content">
+            <div class="repair-columns">
+              <section class="repair-block">
+                <span class="repair-pill">Material-Specific Care</span>
+                <h3>Maintenance by Roof Type</h3>
+                <ul class="bullets">
+                  <li><strong>Shingle:</strong> granule, seal strip, and edge condition checks</li>
+                  <li><strong>Tile:</strong> cracked tile replacement and underlayment watchpoints</li>
+                  <li><strong>Metal:</strong> seam, fastener, and coating condition monitoring</li>
+                </ul>
+              </section>
+              <section class="repair-block">
+                <span class="repair-pill">Service Program</span>
+                <h3>Ongoing Protection Cycle</h3>
+                <ol class="repair-steps">
+                  <li><strong>Baseline:</strong> Initial inspection with complete checklist</li>
+                  <li><strong>Monitor:</strong> Scheduled follow-up condition reviews</li>
+                  <li><strong>Correct:</strong> Minor adjustments before leaks escalate</li>
+                  <li><strong>Prepare:</strong> Seasonal storm-readiness and annual planning summary</li>
+                </ol>
+              </section>
+            </div>
+          </div>
+          <div class="repair-feature__media">
+            <img src="assets/img/Servicebg.jpg" alt="Roof maintenance service and preventative care" />
+          </div>
+        </article>
         <div class="service-cta">
           <a class="btn btn--primary" href="index.html#contact">Start Maintenance Plan</a>
           <a class="btn btn--dark" href="services.html">Back to Services</a>
@@ -107,78 +190,69 @@
       </div>
     </section>
 
-    <section class="section work-gallery">
-      <div class="container">
-        <div class="section__head">
-          <h2>Recent Inspection & Maintenance Work</h2>
-          <p>Examples of ongoing roof care programs that help homeowners prevent costly failures.</p>
-        </div>
-        <div class="work-gallery__grid">
-          <article class="card work-card">
-            <div class="work-card__media">
-              <img src="assets/img/Shinglessss.jpeg" alt="Roof inspection with documented roof conditions" />
-            </div>
-            <h3>Inspection Documentation</h3>
-            <p>Photo-backed findings with priority recommendations by roof area.</p>
-          </article>
-          <article class="card work-card">
-            <div class="work-card__media">
-              <img src="assets/img/hero-1.jpg" alt="Routine roof maintenance project" />
-            </div>
-            <h3>Routine Maintenance Visit</h3>
-            <p>Preventative checks and minor corrections to keep the system performing.</p>
-          </article>
-          <article class="card work-card">
-            <div class="work-card__media">
-              <img src="assets/img/Hurricane.jpeg" alt="Hurricane-readiness roof preparation" />
-            </div>
-            <h3>Storm-Readiness Check</h3>
-            <p>Pre-season review of vulnerable roof details before severe weather arrives.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+   
 
-    <section class="contact container" id="contact">
-      <header class="contact__head">
-        <h2>Schedule an Inspection or Maintenance Visit</h2>
-        <p>Call for urgent leaks. Otherwise send a request and we'll reach out to schedule. South Florida service.</p>
-      </header>
-      <div class="contact__grid">
-        <div class="card contact__info">
-          <h3>Contact</h3>
-          <div class="contact__row">
-            <span class="contact__label">Call</span>
-            <a class="contact__value" href="tel:2395657734">(239) 565-7734</a>
-          </div>
-          <div class="contact__row">
-            <span class="contact__label">Text</span>
-            <a class="contact__value" href="sms:2395657734">(239) 565-7734</a>
-          </div>
-          <div class="contact__row">
-            <span class="contact__label">Service Area</span>
-            <span class="contact__value">South Florida</span>
-          </div>
-          <div class="contact__row">
-            <span class="contact__label">License</span>
-            <span class="contact__value"><strong>#CCC1336956</strong></span>
-          </div>
-          <div class="contact__cta">
-            <a class="btn btn--primary" href="tel:2395657734">Call Now</a>
-            <button class="btn btn--dark" data-modal-open="schedule">Schedule</button>
-          </div>
+    <section class="installation-contact section" id="contact">
+      <div class="container">
+        <div class="contact-header">
+          <h2>Schedule an Inspection or Maintenance Visit</h2>
+          <p>Keep your roof performing with proactive care. Request a visit and we'll help you prevent costly future issues.</p>
         </div>
-        <div class="card">
-          <h3>Request Scheduling</h3>
-          <form class="form" action="https://formspree.io/f/mqedpojk" method="POST">
-            <input type="hidden" name="source" value="Service Page Contact" />
-            <label>Full Name<input name="name" type="text" required /></label>
-            <label>Phone<input name="phone" type="tel" required /></label>
-            <label>Address (City is fine)<input name="city" type="text" /></label>
-            <label>What do you need help with?<select name="service" required><option value="" disabled selected>Select one</option><option>Roof Replacement</option><option>Roof Repair / Leak</option><option>Inspection / Maintenance</option><option>Maintenance Plan</option></select></label>
-            <label>Notes (optional)<textarea name="message" rows="4"></textarea></label>
-            <button class="btn btn--primary" type="submit">Request Scheduling</button>
-          </form>
+        <div class="contact-layout">
+          <div class="contact-quick">
+            <div class="contact-quick__card">
+              <h3>Get in Touch</h3>
+              <div class="contact-quick__item">
+                <span class="contact-quick__label">Call</span>
+                <a class="contact-quick__value" href="tel:2395657734">(239) 565-7734</a>
+              </div>
+              <div class="contact-quick__item">
+                <span class="contact-quick__label">Service Area</span>
+                <span class="contact-quick__value">South Florida</span>
+              </div>
+              <div class="contact-quick__item">
+                <span class="contact-quick__label">License</span>
+                <span class="contact-quick__value"><strong>#CCC1336956</strong></span>
+              </div>
+              <div class="contact-quick__actions">
+                <a class="btn btn--primary btn--lg" href="tel:2395657734">Call Now</a>
+                <button class="btn btn--secondary btn--lg" data-modal-open="schedule">Schedule</button>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrap">
+            <h3>Request Scheduling</h3>
+            <form class="installation-form" action="https://formspree.io/f/mqedpojk" method="POST">
+              <input type="hidden" name="source" value="Inspection & Maintenance Page" />
+              <div class="form-group">
+                <label>Full Name</label>
+                <input name="name" type="text" required />
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input name="phone" type="tel" required />
+              </div>
+              <div class="form-group">
+                <label>Address (City is fine)</label>
+                <input name="city" type="text" />
+              </div>
+              <div class="form-group">
+                <label>What do you need help with?</label>
+                <select name="service" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option>Inspection / Maintenance</option>
+                  <option>Maintenance Plan</option>
+                  <option>Roof Repair / Leak</option>
+                  <option>Roof Replacement</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Notes (optional)</label>
+                <textarea name="message" rows="4"></textarea>
+              </div>
+              <button class="btn btn--primary btn--lg" type="submit">Request Scheduling</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -194,15 +268,15 @@
         <div class="footer__col">
           <div class="footer__head">Contact</div>
           <a href="tel:2395657734">Call: (239) 565-7734</a>
-          <a href="sms:2395657734">Text: (239) 565-7734</a>
           <a href="mailto:jgarcia199854@yahoo.com">Email: jgarcia199854@yahoo.com</a>
         </div>
         <div class="footer__col">
           <div class="footer__head">Quick Links</div>
           <a href="services.html">Services</a>
-          <a href="index.html#hurricane">Hurricane-Ready</a>
-          <a href="index.html#insurance">Insurance Help</a>
-          <a href="index.html#pricing">Pricing</a>
+          <a href="services-installation.html">Installation</a>
+          <a href="services-repairs.html">Repair and Replacement</a>
+          <a href="services-maintenance.html">Maintenance and Inspection</a>
+          <a href="index.html#areas">Service Area</a>
         </div>
       </div>
       <div class="container footer__bottom">
