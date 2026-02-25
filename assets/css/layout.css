@@ -194,20 +194,33 @@
 
 /* Mobile */
 .hamburger{
-  display:none;
+  display: none;
   width: 44px;
   height: 40px;
   background: transparent;
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hamburger span{
-  display:block;
-  height: 2px;
-  background: var(--text);
-  margin: 6px 0;
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #181818;
+  margin: 3px 0;
   border-radius: 2px;
+  transition: background 0.2s;
+}
+body .header .hamburger span {
+  background: #181818 !important;
+}
+body .header {
+  /* Ensure header background is always light enough for black hamburger */
+  background: #fff !important;
+}
 }
 .mobile{
   border-top: 1px solid var(--line);
@@ -247,4 +260,25 @@
   .cards-3{ grid-template-columns: 1fr; }
   .section__head{ flex-direction: column; align-items:flex-start; }
   .footer__grid{ grid-template-columns: 1fr; }
+}
+
+/* --- Mobile menu visibility fix for all pages --- */
+.mobile {
+  background: #fff !important;
+}
+.mobile__inner,
+.mobile__inner a,
+.mobile__services a,
+.mobile__group-title {
+  color: #181818 !important;
+}
+.mobile__group-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  letter-spacing: 0.2px;
+}
+.mobile__inner a:hover {
+  color: #c1121f !important;
 }
