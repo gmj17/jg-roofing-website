@@ -1,3 +1,33 @@
+/* --- Mobile menu visual improvements --- */
+.mobile__group {
+  margin-bottom: 18px;
+}
+.mobile__group-title {
+  margin-bottom: 8px;
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.mobile__group a {
+  display: block;
+  padding: 4px 0 4px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #181818 !important;
+  text-decoration: none;
+  border-left: 2px solid #eee;
+  margin-bottom: 2px;
+  transition: color 0.15s;
+}
+.mobile__group a:hover {
+  color: #c1121f !important;
+  border-left: 2px solid #c1121f;
+}
+.mobile__services {
+  padding-left: 0;
+  margin-bottom: 10px;
+}
 .topbar{
   border-bottom: 1px solid var(--line);
   background: rgba(0,0,0,.25);
