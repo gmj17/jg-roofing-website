@@ -33,6 +33,14 @@
   gap: 18px;
   padding: 14px 0;
 }
+@media (max-width: 900px) {
+  .nav {
+    display: none !important;
+  }
+  .hamburger {
+    display: inline-flex !important;
+  }
+}
 
 .nav{
   display:flex;
